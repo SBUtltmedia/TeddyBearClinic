@@ -1,0 +1,24 @@
+{
+	"roomImage": "parking_lot_1_2.svg",
+	"nextRoom": "parking_lot_2_1.svg",
+	"completedText": "",
+	"targets": [
+	  {
+		"Name": "Booster",
+		"bannerText": "The booster seat is not secured.",
+		"postText": [
+		  "An empty booster seat must be properly seatbelted so it’s not a projectile. </li></ul>"
+		],
+		"loopAmount": 1,
+		"frameRate": 30,
+		"isTrigger": true,
+		"audioFile": "MirrorDing.mp3",
+		"thumbScale": "translate(300,275) scale(2.45)",
+		"hint": "I'm soft but shed all over",
+		"hintXValue": 15,
+		"Text": [
+		  "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+		]
+	  }
+	]
+  }
