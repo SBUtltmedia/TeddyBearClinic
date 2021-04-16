@@ -1,5 +1,6 @@
 class ModalDialog {
-  constructor(room, target, textType, showHeader, isTrigger = true) {
+  constructor(room, target, textType, showHeader, isTrigger = true, callback) {
+    this.callback = callback
     this.isTrigger = isTrigger;
     this.room = room;
     this.showHeader = showHeader;
@@ -14,7 +15,7 @@ class ModalDialog {
 
   displayTargetInfo() {
 
-    this.closeModalDialog();
+
     this.makeDOMItems();
     this.makeModalEvents();
     setTimeout(() => this.changePlayState(), 1000)
@@ -30,12 +31,12 @@ class ModalDialog {
 
     $("#close").click(() => {
 
-      this.closeModalDialog();
+
 
       if (!this.room.triggersLeft) {
         this.room.house.currentRoom = this.room.roomInfo.nextRoom;
         this.room.house.isTutorial = false;
-        setTimeout(()=>this.room.house.loadRoom(),1000)
+        setTimeout(() => this.room.house.loadRoom(), 1000)
 
 
       }
@@ -53,98 +54,57 @@ class ModalDialog {
 
   changePlayState() {
 
-    if (this.room.house.autoplay) {
 
-      $("#audioTag")[0].play();
-    } else {
+    // if (this.room.house.autoplay) {
 
-      $("#audioTag")[0].pause();
-    }
+    //   $("#audioTag")[0].play();
+    // } else {
+
+    //   $("#audioTag")[0].pause();
+    // }
 
 
   }
 
   makeDOMItems() {
 
-
-if(this.room.house.autoplay){
-  var audioButton="audioOn"
-}
-else{
-  var audioButton="audioOff"
-}
-
-
-    var thoughtHeader = $("<div/>", {
-      id: "thoughtHeader",
-      html: this.target.bannerText
-    })
-    var leftInfo = $("<div/>", {
-      id: "leftBubble",
-      html: this.target[this.textType][0]
-    })
-    var rightInfo = $("<div/>", {
-      id: "rightBubble",
-      html: this.target[this.textType][1]
-    })
-    var comboInfo = $("<div/>", {
+    this.popup = $("<div/>", {
       id: "thoughtBubble",
-      class: "thoughtPopAnimation",
-      css: {
-        "left": `${this.target.xValue}%`,
-        "top": `${this.target.yValue}%`
+      class: "thoughtPopAnimation"
+    }).load("popup.html",()=>this.populateBubble())
+    
+
+
+  }
+  populateBubble(){
+    $("#roomSVG").append(this.popup)
+    $("#bubbleHeaders").html("This is not safe!")
+    console.log(this)
+   
+    $("#bubbleContent").html(this.target[this.textType][0])
+
+
+    $("#thoughtBubble").on("click", ()=> {
+      if ($("#bubbleHeaders,#bubbleContent").hasClass("secondBubble")) {
+        $("#thoughtBubble").remove()
+        if (!this.room.triggersLeft) {
+          this.room.house.currentRoom = this.room.roomInfo.nextRoom;
+          this.room.house.isTutorial = false;
+          setTimeout(() => this.room.house.loadRoom(), 1000)
+  
+  
+        }
       }
+      else {
+        this.callback.animate()
+        $("#bubbleHeaders").html("How can we make it safe?")
+      console.log(this)
+     
+      $("#bubbleContent").html(this.target[this.textType][1])
+        $("#bubbleHeaders,#bubbleContent").addClass("secondBubble")
+      }
+
+   
     })
-    var bubbles = $("<div/>", {
-      id: "Bubbles"
-    })
-    var buttons = $("<div/>", {
-      class: "ButtonBank"
-    })
-    var audio = $("<div/>", {
-      id: "AudioButton",
-      class: audioButton
-    })
-    var audioTag = $("<audio/>", {
-      id: "audioTag",
-      class: this.audioPlay
-    })
-    var audioSource = $("<source/>", {
-      src: `audio/spokenAudio/${this.textType}/${this.room.house.currentRoom}_${this.target.Name}.mp3`
-    })
-    var closeButton = $("<div/>", {
-      id: "close",
-      html: "✖"
-    })
-    $("#roomSVG").append(comboInfo.append(thoughtHeader.append(buttons.append(audio, closeButton)), bubbles.append(leftInfo, rightInfo), audioTag.append(audioSource)))
-
-
-
-
-
-    if (this.showHeader == false) {
-
-      //leftInfo.prepend(audio);
-
-      [closeButton, rightInfo].forEach(item => item.hide())
-
-
-
-    }
-    if (!this.isTrigger) {
-      rightInfo.hide()
-    }
-
-
-
   }
-
-
-
-  closeModalDialog() {
-
-    $("#thoughtBubble").remove();
-  }
-
-
 }

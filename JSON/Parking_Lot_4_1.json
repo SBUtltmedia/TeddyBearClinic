@@ -1,13 +1,13 @@
 {
-	"roomImage": "parking_lot_2_2.svg",
-	"nextRoom": "parking_lot_3_1",
+	"roomImage": "parking_lot_4_1.svg",
+	"nextRoom": "parking_lot_4_1",
 	"completedText": "",
 	"targets": [
 	  {
-		"Name": "Sunnybear",
+		"Name": "Sunglasses",
 		"bannerText": "The booster seat is not secured.",
 		"postText": [
-		  "Sunnybear needs a booster seat. </li></ul>"
+		  "Popstarbear is wearing sunglasses to make it easier to see the </li></ul>"
 		],
 		"loopAmount": 1,
 		"frameRate": 30,
@@ -22,10 +22,10 @@
 	},	  
 
 			{
-			  "Name": "Wizardbear",
+			  "Name": "Beachbear",
 			  "bannerText": "The booster seat is not secured.",
 			  "postText": [
-				"Wizardbear needs to wear their seatbelt over their chest, not behind them </li></ul>"
+				"Beachbear is too short to sit in the front seat. </li></ul>"
 			  ],
 			  "loopAmount": 1,
 			  "frameRate": 30,

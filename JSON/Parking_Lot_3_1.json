@@ -1,13 +1,13 @@
 {
-	"roomImage": "parking_lot_1_2.svg",
-	"nextRoom": "parking_lot_2_1.svg",
+	"roomImage": "parking_lot_3_1.svg",
+	"nextRoom": "parking_lot_3_2",
 	"completedText": "",
 	"targets": [
 	  {
-		"Name": "Booster",
+		"Name": "Constructionbear",
 		"bannerText": "The booster seat is not secured.",
 		"postText": [
-		  "An empty booster seat must be properly seatbelted so it’s not a projectile. </li></ul>"
+		  "Constructionbear must buckle their seatbelt. </li></ul>"
 		],
 		"loopAmount": 1,
 		"frameRate": 30,

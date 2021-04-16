@@ -27,16 +27,14 @@ class Target {
   itemClicked(evt) {
     var soundEffect = ss_soundbits("audio/" + this.targetInfo.audioFile);
     soundEffect.playclip();
-console.log(this)
-    this.animate().then(() => {
     setTimeout(  ()=>this.modalAndCubbyShow(evt),500)
-    })
+ 
   }
 
   // initialize the timer variables and start the animation
 
   modalAndCubbyShow(evt) {
-
+    console.log(evt)
     if (this.targetInfo.isTrigger) {
       var cubbyCheck = evt.currentTarget.id.slice(0,8)
 
@@ -67,8 +65,8 @@ console.log(this)
         this.room.showHeader = true
       }
 
-      this.targetModalDialog = new ModalDialog(this.room, this.targetInfo, "postText", this.room.showHeader, this.targetInfo.isTrigger)
-      this.targetModalDialog.displayTargetInfo()
+      this.targetModalDialog = new ModalDialog(this.room, this.targetInfo, "postText", this.room.showHeader, this.targetInfo.isTrigger, this)
+      // this.targetModalDialog.displayTargetInfo()
 
 
 
@@ -81,7 +79,7 @@ console.log(this)
 
 
   animate(isInternal = false) {
-
+console.log("Howdy partner!")
 
     var framesSelector = $(`[id^="${this.targetInfo.Name}-"]`)
 
@@ -113,7 +111,7 @@ console.log(this)
 
         this.animateDeferred.resolve("vfdg")
         console.log(this.targetInfo.Name)
-        $(" #"+this.targetInfo.Name,+"_After").show()
+        $(" #"+this.targetInfo.Name+"_After").show()
         //framesSelector.show(())
 
       } else {

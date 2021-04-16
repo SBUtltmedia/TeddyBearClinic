@@ -1,13 +1,13 @@
 {
-	"roomImage": "parking_lot_1_2.svg",
-	"nextRoom": "parking_lot_2_1.svg",
+	"roomImage": "parking_lot_2_1.svg",
+	"nextRoom": "Parking_Lot_2_2",
 	"completedText": "",
 	"targets": [
 	  {
-		"Name": "Booster",
+		"Name": "Businessbear",
 		"bannerText": "The booster seat is not secured.",
 		"postText": [
-		  "An empty booster seat must be properly seatbelted so it’s not a projectile. </li></ul>"
+		  "Businessbear needs to keep their eyes on the road. Texting while driving is dangerous. </li></ul>"
 		],
 		"loopAmount": 1,
 		"frameRate": 30,
