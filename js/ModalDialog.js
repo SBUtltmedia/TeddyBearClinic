@@ -29,19 +29,7 @@ class ModalDialog {
 
 
 
-    $("#close").click(() => {
 
-
-
-      if (!this.room.triggersLeft) {
-        this.room.house.currentRoom = this.room.roomInfo.nextRoom;
-        this.room.house.isTutorial = false;
-        setTimeout(() => this.room.house.loadRoom(), 1000)
-
-
-      }
-
-    })
   }
 
 
@@ -87,6 +75,7 @@ class ModalDialog {
     $("#thoughtBubble").on("click", ()=> {
       if ($("#bubbleHeaders,#bubbleContent").hasClass("secondBubble")) {
         $("#thoughtBubble").remove()
+        this.room.removeTarget()
         if (!this.room.triggersLeft) {
           this.room.house.currentRoom = this.room.roomInfo.nextRoom;
           this.room.house.isTutorial = false;
@@ -96,13 +85,17 @@ class ModalDialog {
         }
       }
       else {
-        this.callback.animate()
+        $("#thoughtBubble").hide()
+        this.callback.animate().then(()=>
+       {
         $("#bubbleHeaders").html("How can we make it safe?")
-      console.log(this)
+    
      
       $("#bubbleContent").html(this.target[this.textType][1])
         $("#bubbleHeaders,#bubbleContent").addClass("secondBubble")
-      }
+        $("#thoughtBubble").show()
+      })
+    }
 
    
     })

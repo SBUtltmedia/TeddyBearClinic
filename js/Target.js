@@ -34,19 +34,19 @@ class Target {
   // initialize the timer variables and start the animation
 
   modalAndCubbyShow(evt) {
-    console.log(evt)
+ 
     if (this.targetInfo.isTrigger) {
       var cubbyCheck = evt.currentTarget.id.slice(0,8)
 
       if(cubbyCheck === "cubbySVG"){
 
       }else{
-        this.room.removeTarget()
+       // this.room.removeTarget()
         var cubbyTarget = `#cubbySVG_${this.targetInfo.Name}`
         $(cubbyTarget).show(2000)
         $(cubbyTarget).off().on("click", (evt) => this.itemClicked(evt));
 
-        $(`#${this.targetInfo.Name}`).hide("1000");
+       // $(`#${this.targetInfo.Name}`).hide("1000");
         this.room.blur.removeHighlightCopy()
         if (this.room.house.isTutorial && this.room.triggersLeft) {
 
@@ -79,7 +79,7 @@ class Target {
 
 
   animate(isInternal = false) {
-console.log("Howdy partner!")
+ 
 
     var framesSelector = $(`[id^="${this.targetInfo.Name}-"]`)
 
@@ -110,8 +110,8 @@ console.log("Howdy partner!")
       // var framesSelector = $(`[id^="${this.targetInfo.Name}"]`)
 
         this.animateDeferred.resolve("vfdg")
-        console.log(this.targetInfo.Name)
-        $(" #"+this.targetInfo.Name+"_After").show()
+    
+      
         //framesSelector.show(())
 
       } else {
