@@ -98,32 +98,47 @@
 
 }
 
-#leftBubble, #rightBubble {
-  border-radius: 1rem;
-  background-color: white;
-  width: 100%;
-/*height: 100%; */
-  margin-left: 0.5rem;
-font-family: " Verdana", sans-serif;
-  font-size: 1.3rem;
-  padding: 0.8rem;
-}
+
 .secondBubble{
   border-color: #05D0E0!important;
   background-color: #5FFFEF!important;
 }
 #bubbleHeaders,#bubbleContent{
+  border-radius: 1rem;
   border-color: #FF3F12;
   background-color: #FD8559;
   font-family: 'Kiwi Maru', serif;
+  font-size: 2rem;
+  font-weight: bold;
   color: #15023E;
   border-style: solid;
   border-width: .5rem .5rem 0rem .5rem;
 }
-#bubbleContent{  border-width: .5rem;
+#bubbleContent{  
+  border-width: .5rem;
   padding: 4rem;
+  margin-right: 30%;
 }
-#bubbleHeaders{width: 50%;}
+#bubbleContent:after {
+	content: '';
+	position: absolute;
+	top: 94%;
+	left: 93%;
+	width: 0;
+	height: 0;
+	border: 42px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -21px;
+	margin-bottom: -42px;
+}
+#bubbleHeaders{
+  width: 30%;
+margin-left: 3%;
+height: 10%;
+padding: 1rem 0 1rem 1rem;
+}
 #leftBubble {
   border-width: 0rem 0rem 1rem 0rem;
   border-color: rgba(0, 0, 0, 0);
@@ -131,10 +146,10 @@ font-family: " Verdana", sans-serif;
 
 }
 #Kristihead{
-  width: 6rem;
+  width: 10rem;
   position: relative;
-  left:90%;
-  top:-3rem;
+  left:60%;
+  top:-5rem;
 }
 
 

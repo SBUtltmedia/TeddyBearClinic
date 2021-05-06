@@ -10,7 +10,7 @@
 		  "An empty booster seat must be properly seatbelted so it’s not a projectile. </li></ul>"
 		],
 		"loopAmount": 1,
-		"frameRate": 30,
+		"frameRate": 10,
 		"isTrigger": true,
 		"audioFile": "MirrorDing.mp3",
 		"thumbScale": "translate(300,275) scale(2.45)",
@@ -28,7 +28,7 @@
 		"Both of Flowerbear's knees have to be over the seat to be safe </li></ul>"
 	  ],
 	  "loopAmount": 1,
-	  "frameRate": 30,
+	  "frameRate": 10,
 	  "isTrigger": true,
 	  "audioFile": "MirrorDing.mp3",
 	  "thumbScale": "translate(300,275) scale(2.45)",
@@ -46,7 +46,7 @@
 		  "Bubbles can distract the driver who needs to concentrate. </li></ul>"
 		],
 		"loopAmount": 1,
-		"frameRate": 30,
+		"frameRate": 10,
 		"isTrigger": true,
 		"audioFile": "MirrorDing.mp3",
 		"thumbScale": "translate(300,275) scale(2.45)",
