@@ -1,6 +1,6 @@
 {
-	"roomImage": "parking_lot_3_2.svg",
-	"nextRoom": "parking_lot_4_1",
+	"roomImage": "Parking_Lot_3_2.svg",
+	"nextRoom": "Parking_Lot_4_1",
 	"completedText": "",
 	"targets": [
 	  {
