@@ -46,7 +46,7 @@
 		  "Bubbles can distract the driver who needs to concentrate. </li></ul>"
 		],
 		"loopAmount": 1,
-		"frameRate": 10,
+		"frameRate": 7,
 		"isTrigger": true,
 		"audioFile": "MirrorDing.mp3",
 		"thumbScale": "translate(300,275) scale(2.45)",

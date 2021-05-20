@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1493.5 974" style="enable-background:new 0 0 1493.5 974;" xml:space="preserve">
+	<style type="text/css">
+	#bubbleContent{
+			font-family: 'Baloo 2';
+		font-size: 2em;
+	}
+		.st_bear_0 {
+			fill: #5FFFEF;
+		}
+
+		.st_bear_1 {
+			fill: #05D0E0;
+		}
+
+		.st_bear_2 {
+			fill: none;
+		}
+
+		.st_bear_3 {
+			fill: #15023E;
+		}
+
+		.st_bear_4 {
+			font-family: 'Baloo 2';
+		}
+
+		.st_bear_5 {
+			font-size: 54.9013px;
+		}
+
+		.st_bear_6 {
+			font-size: 38.7538px;
+		}
+
+		.st_bear_7 {
+			fill: #F89590;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_8 {
+			fill: #F89590;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_9 {
+			fill: #F9C2C5;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_10 {
+			fill: #F9C2C5;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_11 {
+			fill: #EE4776;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_12 {
+			opacity: 0.68;
+			fill: #FFFFFF;
+			enable-background: new;
+		}
+
+		.st_bear_13 {
+			fill: none;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_14 {
+			fill: #9C153F;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_15 {
+			fill: #FFFFFF;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_16 {
+			fill: #4B6859;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10.0001;
+		}
+
+		.st_bear_17 {
+			fill: #FFFFFF;
+		}
+
+		.st_bear_18 {
+			fill: #FFFFFF;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_19 {
+			fill: #4B6859;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10.0001;
+		}
+
+		.st_bear_20 {
+		}
+
+		.st_bear_21 {
+			display: inline;
+			fill: none;
+			stroke: #15023E;
+			stroke-width: 3;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_22 {
+			display: inline;
+			fill: none;
+			stroke: #15023E;
+			stroke-width: 3;
+			stroke-linecap: round;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_23 {
+			display: inline;
+		}
+
+		.st_bear_24 {
+			fill: #FD8559;
+		}
+
+		.st_bear_25 {
+			fill: #FF3F12;
+		}
+
+		.st_bear_26 {
+			display: inline;
+			fill: none;
+		}
+
+		.st_bear_27 {
+			display: inline;
+			fill: #15023E;
+		}
+
+		.st_bear_28 {
+			display: inline;
+			fill: #F89590;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_29 {
+			fill: #9C153F;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+		}
+
+		.st_bear_30 {
+			fill: none;
+			stroke: #15023E;
+			stroke-width: 2;
+			stroke-linecap: round;
+			stroke-miterlimit: 10;
+		}
+	</style>
+	
+	<g id="Box_1" class="st_bear_20">
+		<g id="Bottom_box_1_" class="st_bear_23">
+			<path class="st_bear_24" d="M1097.4,722c-11.1,0-34.6-9.9-55.3-18.7c-23.9-10.1-46.4-19.7-60.6-19.7H56.6C30.4,683.6,9,662.2,9,635.9    V213c0-26.3,21.4-47.6,47.6-47.6h924.9c26.3,0,47.6,21.4,47.6,47.6v391.7L1097.4,722L1097.4,722z"/>
+			<path class="st_bear_25" d="M981.5,174.3c21.3,0,38.6,17.3,38.6,38.6v389.3v4.9l2.5,4.2l56.7,97.1c-10.6-3.7-23.2-9.1-33.7-13.5    c-25.8-10.9-48.1-20.4-64.1-20.4h-36.1H56.6c-21.3,0-38.6-17.3-38.6-38.6V213c0-21.3,17.3-38.6,38.6-38.6L981.5,174.3     M981.5,156.3H56.6C25.4,156.3,0,181.7,0,213v423c0,31.3,25.4,56.6,56.6,56.6h888.8h36.1c24.9,0,90.2,38.4,115.9,38.4    c6.6,0,10.6-2.5,10.6-9l-69.9-119.7V213C1038.1,181.7,1012.8,156.3,981.5,156.3L981.5,156.3z"/>
+		</g>
+		<g id="Top_box_1_" class="st_bear_23">
+			<path class="st_bear_24" d="M52.2,160.6c-10.5,0-19.1-8.6-19.1-19.1V60.1c0-10.5,8.6-19.1,19.1-19.1h414.6c10.5,0,19.1,8.6,19.1,19.1    v81.4c0,10.5-8.6,19.1-19.1,19.1H52.2z"/>
+			<g>
+				<path class="st_bear_25" d="M466.8,50c5.6,0,10.1,4.5,10.1,10.1v81.4c0,5.6-4.5,10.1-10.1,10.1H52.2c-5.6,0-10.1-4.5-10.1-10.1V60.1     c0-5.6,4.5-10.1,10.1-10.1H466.8 M466.8,32H52.2c-15.5,0-28.1,12.6-28.1,28.1v81.4c0,15.5,12.6,28.1,28.1,28.1h414.6     c15.5,0,28.1-12.6,28.1-28.1V60.1C494.9,44.6,482.3,32,466.8,32L466.8,32z"/>
+			</g>
+		</g>
+		<rect x="54.4" y="81" class="st_bear_26" width="464.6" height="130.3"/>
+		<text id="Title_1_" transform="matrix(1 0 0 1 54.376 117.2813)" class="st_bear_27 st_bear_4 st_bear_5">This is not safe!</text>
+		
+		
+		
+		
+		<rect x="41.6" y="211" class="st_bear_26" width="955.4" height="436.5"/>
+				<foreignObject x="20" y="200" width="450" height="600">
+<p id="bubbleContent" xmlns="http://www.w3.org/1999/xhtml">Uh oh! Sunny Bear wanted to wear the seatbelt by itself.  But Sunny Bear  is not tall enough yet.  When we are not tall enough for the seatbelt, the shoulder belt can touch our neck like it is on Sunny Bear.  This is not safe.</p>
+</foreignObject>
+
+		<g id="Kristi_2_">
+			<path id="right_outter_ear_3_" class="st_bear_8" d="M1117.9,616.9c4.7-25.5,33-46.3,58.5-41.7c8,1.5,20.1,4.6,26,9.4    c13,10.5,14.1,32.2,10.9,49.8c-4.7,25.5-26.5,44.5-52,39.8c-11.1-2-27.4-7.5-34.1-15.5C1118.4,648.3,1115.2,631.3,1117.9,616.9z"/>
+			<path id="left_outter_ear_3_" class="st_bear_8" d="M1454.3,681.6c4.7-25.5-14.4-55-39.9-59.7c-8-1.5-20.5-2.8-27.7-0.5    c-15.8,5.2-24.6,25.1-27.9,42.7c-4.7,25.5,9,51,34.5,55.6c11.1,2,28.2,2.7,37.4-2.4C1442.7,710.8,1451.6,696,1454.3,681.6z"/>
+			<path id="left_inner_ear_3_" class="st_bear_9" d="M1142.4,626c3.8-14.1,21.5-26.9,38-22.3c16.1,4.5,19.2,29.7,17.3,40.2    c-2.6,14.4-12.1,22.4-29,19.3C1148.6,659.5,1137.6,643.6,1142.4,626z"/>
+			<path id="right_inner_ear_3_" class="st_bear_9" d="M1426.8,679.7c1.4-14.6-10.5-32.8-27.6-34.3c-16.7-1.5-28.5,21-30.4,31.4    c-2.6,14.4,3.3,25.3,20.2,28.4C1409.1,708.8,1425,697.8,1426.8,679.7z"/>
+			<path id="Head_3_" class="st_bear_8" d="M1407.9,808.7c-8.6,47.1-33.1,77.6-70.7,99.5c-29.4,17.2-67.7,32.3-103.4,25.7    c-39-7.2-70.7-34.7-91.1-66c-22.9-35-36.6-69.5-28.6-113.1c6.7-36.7,25.5-68.1,51.3-90.6c33.1-28.9,77.9-42.9,123.5-34.6    c49.6,9.1,85.6,43.3,105,87.1C1406.3,744.7,1413.9,776.1,1407.9,808.7z"/>
+			<path class="st_bear_10" d="M1308.5,695c6.8-3.4,31.1,4.9,37.7,13.1c2,2.5,9.5,15.6,9.5,15.6s-5.8-8.7-20.4-14.5    c-6.9-2.8-15.8-2.9-26.8-4.9C1300.9,702.8,1306.5,696,1308.5,695z"/>
+			<path class="st_bear_10" d="M1246.2,682c-7.7-7.1-28.1-4.4-37.1,0.9c-2.8,1.6-11.1,10.3-11.1,10.3s6.7-7.5,23.1-8.1    c6.2-0.2,12.9,2.4,22.4,4.1C1250.8,690.5,1247.9,683.6,1246.2,682z"/>
+			<path id="Muzzle_3_" class="st_bear_10" d="M1195.1,817.5c1.1-7.9,5.6-21.3,14.7-29.7c5.9-5.4,13.6-6.8,20.6-11.6    c24.1-16.6,24.2-48,40.6-44.9c17.9,3.3,6.7,26.4,21.1,53.2c4.6,8.5,15.1,16.5,19.8,26.7c4.1,9,0.9,23.5-0.7,29.1    c-8.5,29.3-38.3,57.7-69.6,52C1214.7,887.3,1190.9,849.1,1195.1,817.5z"/>
+			<path id="Nose_6_" class="st_bear_11" d="M1237.5,788.3c-1.7-15.7,15.8-12.5,23.6-11.1c7.8,1.4,26.6,6.4,21.4,17.8    c-3.8,8.4-9.6,27.5-27.6,24.2C1238.5,816.2,1238.5,797.4,1237.5,788.3z"/>
+			<path id="highlight_3_" class="st_bear_12" d="M1252.9,784.2c-2.7-2-3.9-3.8,2.3-4.2c5.3-0.3,19.1,5,18.8,6.5    C1274,786.5,1257.4,787.6,1252.9,784.2z"/>
+			<line class="st_bear_13" x1="1254.8" y1="820" x2="1250.7" y2="842.3"/>
+			<path class="st_bear_14" d="M1243.3,874.1c-32.9-6-40.9-46-40.9-46s11.2,14.4,24.6,16.9c11.9,2.2,23.7-3.4,23.7-3.4s6.1,8.8,21.3,10.1    c6.8,0.6,26.3-9,26.3-9S1276.1,880.1,1243.3,874.1z"/>
+			<path id="left_eye_6_" class="st_bear_15" d="M1349.7,759.6c-0.8-12.5-9.3-24.8-24.2-27.6c-11.9-2.2-25,10.4-27.3,22.7    c-2.2,11.9-6.2,26.3,19.5,28.2c14.2,1.1,21.3-1.9,25.8-6.1C1349,771.8,1350.1,765.8,1349.7,759.6z"/>
+
+			<ellipse id="iris_6_" transform="matrix(0.1804 -0.9836 0.9836 0.1804 331.9807 1927.4684)" class="st_bear_16" cx="1322.6" cy="764.5" rx="18.9" ry="16.7"/>
+
+			<ellipse id="pupil_x27__6_" transform="matrix(0.1804 -0.9836 0.9836 0.1804 332.0542 1928.5269)" cx="1323.2" cy="765" rx="14" ry="10.6"/>
+			<circle id="big_sparkle_6_" class="st_bear_17" cx="1326" cy="757.4" r="2"/>
+			<circle id="lil_sparkle_6_" class="st_bear_17" cx="1320.8" cy="761.9" r="2.5"/>
+			<path id="left_eye_5_" class="st_bear_18" d="M1188.1,729.9c5.2-11.4,17.5-19.9,32.4-17.2c11.9,2.2,19.7,18.6,17.4,30.9    c-2.2,11.9-3.5,26.8-28.2,19.5c-13.7-4-19.2-9.4-21.9-14.8C1184.4,741.6,1185.5,735.6,1188.1,729.9z"/>
+
+			<ellipse id="iris_5_" transform="matrix(0.1804 -0.9836 0.9836 0.1804 260.9758 1801.6564)" class="st_bear_19" cx="1211.6" cy="744.2" rx="18.9" ry="16.7"/>
+
+			<ellipse id="pupil_x27__5_" transform="matrix(0.1804 -0.9836 0.9836 0.1804 260.1324 1801.1119)" cx="1210.8" cy="744.5" rx="14" ry="10.6"/>
+			<circle id="big_sparkle_5_" class="st_bear_17" cx="1215.7" cy="737.1" r="2"/>
+			<circle id="lil_sparkle_5_" class="st_bear_17" cx="1210.5" cy="741.7" r="2.5"/>
+			
+		</g>
+	</g>
+
+</svg>
