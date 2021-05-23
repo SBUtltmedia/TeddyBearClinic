@@ -59,7 +59,7 @@ class ModalDialog {
     this.popup = $("<div/>", {
       id: "thoughtBubble",
       class: "thoughtPopAnimation"
-    }).load("newPopup.svg",()=>this.populateBubble())
+    }).load("popup.html",()=>this.populateBubble())
     
 
 

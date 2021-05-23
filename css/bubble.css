@@ -103,36 +103,13 @@
   border-color: #05D0E0!important;
   background-color: #5FFFEF!important;
 }
-#bubbleHeaders,#bubbleContent{
-  border-radius: 1rem;
-  border-color: #FF3F12;
-  background-color: #FD8559;
-  font-family: 'Kiwi Maru', serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #15023E;
-  border-style: solid;
-  border-width: .5rem .5rem 0rem .5rem;
-}
+
 #bubbleContent{  
   border-width: .5rem;
   padding: 4rem;
   margin-right: 30%;
 }
-#bubbleContent:after {
-	content: '';
-	position: absolute;
-	top: 94%;
-	left: 93%;
-	width: 0;
-	height: 0;
-	border: 42px solid transparent;
-	border-top-color: #00aabb;
-	border-bottom: 0;
-	border-right: 0;
-	margin-left: -21px;
-	margin-bottom: -42px;
-}
+
 #bubbleHeaders{
   width: 30%;
 margin-left: 3%;
