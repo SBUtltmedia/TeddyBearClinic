@@ -188,7 +188,7 @@ setTimeout(()=>this.house.Room.targets[0].animate(false),1000);
 
     var triggersLeftDiv = $("<div/>", {
       id: "triggersLeft",
-      text: "Triggers Left: " + this.triggersLeft
+      text: "Items to Find: " + this.triggersLeft
     })
     $('#triggersLeft').remove()
     $("#roomSVG").append(triggersLeftDiv)

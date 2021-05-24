@@ -88,11 +88,13 @@ class ModalDialog {
         $("#thoughtBubble").hide()
         this.callback.animate().then(()=>
        {
-        $("#bubbleHeaders").html("How can we make it safe?")
+        $("#Title_1_").html("What do we do?")
     
      
       $("#bubbleContent").html(this.target[this.textType][1])
         $("#bubbleHeaders,#bubbleContent").addClass("secondBubble")
+        $(".background1Border").removeClass("background1Border").addClass("background2Border")
+        $(".background1").removeClass("background1").addClass("background2")
         $("#thoughtBubble").show()
       })
     }
