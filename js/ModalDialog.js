@@ -92,7 +92,7 @@ class ModalDialog {
     
      
       $("#bubbleContent").html(this.target[this.textType][1])
-        $("#bubbleHeaders,#bubbleContent").addClass("secondBubble")
+      
         $(".background1Border").removeClass("background1Border").addClass("background2Border")
         $(".background1").removeClass("background1").addClass("background2")
         $("#thoughtBubble").show()
