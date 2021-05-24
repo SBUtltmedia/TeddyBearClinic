@@ -73,7 +73,7 @@ class ModalDialog {
 
 
     $("#thoughtBubble").on("click", ()=> {
-      if ($("#bubbleHeaders,#bubbleContent").hasClass("secondBubble")) {
+      if ( $(".background2").length) {
         $("#thoughtBubble").remove()
         this.room.removeTarget()
         if (!this.room.triggersLeft) {
