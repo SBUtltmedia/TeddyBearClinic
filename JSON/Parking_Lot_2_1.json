@@ -7,7 +7,8 @@
 		"Name": "Businessbear",
 		"bannerText": "The booster seat is not secured.",
 		"postText": [
-		  "Businessbear needs to keep their eyes on the road. Texting while driving is dangerous. </li></ul>"
+		  "Businessbear needs to keep their eyes on the road. Texting while driving is dangerous.", 
+		  "Now they can see the road and drive safely."
 		],
 		"loopAmount": 1,
 		"frameRate": 5,

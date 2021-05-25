@@ -7,7 +7,8 @@
 		"Name": "Sunny",
 		"bannerText": "The booster seat is not secured.",
 		"postText": [
-		  "Sunnybear needs a booster seat. </li></ul>"
+		  "Sunnybear needs a booster seat.",
+		  "Now Sunnybear is safe."
 		],
 		"loopAmount": 1,
 		"frameRate": 15,

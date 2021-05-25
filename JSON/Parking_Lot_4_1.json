@@ -9,6 +9,7 @@
 		"postText": [
 		  "Popstarbear is wearing sunglasses to make it easier to see the </li></ul>"
 		],
+		"isGood": true,
 		"loopAmount": 1,
 		"frameRate": 30,
 		"isTrigger": true,
