@@ -13,7 +13,7 @@
 		"loopAmount": 1,
 		"frameRate": 30,
 		"isTrigger": true,
-		"audioFile": "MirrorDing.mp3",
+		"audioFile": "soccer.mp3",
 		"thumbScale": "translate(300,275) scale(2.45)",
 		"hint": "I'm soft but shed all over",
 		"hintXValue": 15,

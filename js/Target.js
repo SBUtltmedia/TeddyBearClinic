@@ -20,13 +20,15 @@ class Target {
   }
 
 
-
+playSound(sound="MirrorDing.mp3"){
+  var soundEffect = ss_soundbits("audio/" + sound);
+  soundEffect.playclip();
+}
 
 
 
   itemClicked(evt) {
-    var soundEffect = ss_soundbits("audio/" + this.targetInfo.audioFile);
-    soundEffect.playclip();
+   this.playSound()
     setTimeout(  ()=>this.modalAndCubbyShow(evt),500)
  
   }
@@ -79,7 +81,7 @@ class Target {
 
 
   animate(isInternal = false) {
- 
+
 
     var framesSelector = $(`[id^="${this.targetInfo.Name}-"]`)
 

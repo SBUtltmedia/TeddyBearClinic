@@ -43,13 +43,13 @@ class ModalDialog {
   changePlayState() {
 
 
-    // if (this.room.house.autoplay) {
+    if (this.room.house.autoplay) {
 
-    //   $("#audioTag")[0].play();
-    // } else {
+      $("#audioTag")[0].play();
+    } else {
 
-    //   $("#audioTag")[0].pause();
-    // }
+      $("#audioTag")[0].pause();
+    }
 
 
   }
@@ -78,6 +78,7 @@ class ModalDialog {
   }
   changeBubble() {
     $("#thoughtBubble").hide()
+    this.callback.playSound(this.callback.targetInfo.audioFile)
     this.callback.animate().then(() => {
       $("#Heading").html(this.heading)
 

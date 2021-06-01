@@ -7,7 +7,8 @@
 		"Name": "Booster",
 		"bannerText": "The booster seat is not secured.",
 		"postText": [
-		  "An empty booster seat must be properly seatbelted so it’s not a projectile. </li></ul>"
+		  "Good find! You saw that the booster seat was not buckled to the car.  Even when we’re not sitting in a booster seat, we should still make sure it’s buckled in.",
+		  "Now the seat is buckled.  This will keep the seat in place so that it won’t move around in case the car stops short."
 		],
 		"loopAmount": 1,
 		"frameRate": 10,
@@ -25,7 +26,8 @@
 	  "Name": "Flowerbear",
 	  "bannerText": "Both of Flowerbear's knees have to be over the seat to be safe.",
 	  "postText": [
-		"Both of Flowerbear's knees have to be over the seat to be safe </li></ul>"
+		"“Flower Bear” is not sitting with their knees bent over the edge of the seat.  This is not a safe way to ride in the car.",
+		"Before riding in the seatbelt, kids should be able to pass this 5 step test: 1. Knees bend comfortably at the edge 2. Bottom is all the way back in the seat 3. Lap belt lies low on the hips, at the top of the thighs 4. Shoulder belt crosses the shoulder 5. They can ride like this the whole time"
 	  ],
 	  "loopAmount": 1,
 	  "frameRate": 10,
@@ -43,7 +45,8 @@
 		"Name": "Bubblebear",
 		"bannerText": "Bubbles can distract the driver who needs to concentrate.",
 		"postText": [
-		  "Bubbles can distract the driver who needs to concentrate. </li></ul>"
+		  "Bubble Bear is having fun with his bubbles, but they can distract the driver.",
+		  "When we’re in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use his bubbles until he’s outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
 		],
 		"loopAmount": 1,
 		"frameRate": 7,
