@@ -1,64 +1,64 @@
 {
-	"roomImage": "Parking_Lot_3_2.svg",
-	"nextRoom": "Parking_Lot_4_1",
-	"completedText": "",
-	"targets": [
-	  {
-		"Name": "Booster",
-		"bannerText": "The booster seat is not secured.",
-		"postText": [
-		  "Good find! You saw that the booster seat was not buckled to the car.  Even when we’re not sitting in a booster seat, we should still make sure it’s buckled in.",
-		  "Now the seat is buckled.  This will keep the seat in place so that it won’t move around in case the car stops short."
-		],
-		"loopAmount": 1,
-		"frameRate": 10,
-		"isTrigger": true,
-		"audioFile": "MirrorDing.mp3",
-		"thumbScale": "translate(300,275) scale(2.45)",
-		"hint": "I'm soft but shed all over",
-		"hintXValue": 15,
-		"Text": [
-		  "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
-		]
-	},	  
+    "roomImage": "Parking_Lot_3_2.svg",
+    "nextRoom": "Parking_Lot_4_1",
+    "completedText": "",
+    "backgroundAnimations": ["Balloons"],
+    "targets": [{
+            "Name": "Booster",
+            "bannerText": "The booster seat is not secured.",
+            "postText": [
+                "Good find! You saw that the booster seat was not buckled to the car.  Even when we’re not sitting in a booster seat, we should still make sure it’s buckled in.",
+                "Now the seat is buckled.  This will keep the seat in place so that it won’t move around in case the car stops short."
+            ],
+            "loopAmount": 1,
+            "frameRate": 10,
+            "isTrigger": true,
+            "audioFile": "MirrorDing.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },
 
-	{
-	  "Name": "Flowerbear",
-	  "bannerText": "Both of Flowerbear's knees have to be over the seat to be safe.",
-	  "postText": [
-		"“Flower Bear” is not sitting with their knees bent over the edge of the seat.  This is not a safe way to ride in the car.",
-		"Before riding in the seatbelt, kids should be able to pass this 5 step test: 1. Knees bend comfortably at the edge 2. Bottom is all the way back in the seat 3. Lap belt lies low on the hips, at the top of the thighs 4. Shoulder belt crosses the shoulder 5. They can ride like this the whole time"
-	  ],
-	  "loopAmount": 1,
-	  "frameRate": 10,
-	  "isTrigger": true,
-	  "audioFile": "MirrorDing.mp3",
-	  "thumbScale": "translate(300,275) scale(2.45)",
-	  "hint": "I'm soft but shed all over",
-	  "hintXValue": 15,
-	  "Text": [
-		"<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
-	  ]
-	},
+        {
+            "Name": "Flowerbear",
+            "bannerText": "Both of Flowerbear's knees have to be over the seat to be safe.",
+            "postText": [
+                "“Flower Bear” is not sitting with their knees bent over the edge of the seat.  This is not a safe way to ride in the car.",
+                "Before riding in the seatbelt, kids should be able to pass this 5 step test: <ol> <li> Knees bend comfortably at the edge </li> <li> Bottom is all the way back in the seat </li> <li> Lap belt lies low on the hips, at the top of the thighs </li> <li> Shoulder belt crosses the shoulder </li> <li> They can ride like this the whole time </li> </ol>"
+            ],
+            "loopAmount": 1,
+            "frameRate": 10,
+            "isTrigger": true,
+            "audioFile": "MirrorDing.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },
 
-	{
-		"Name": "Bubblebear",
-		"bannerText": "Bubbles can distract the driver who needs to concentrate.",
-		"postText": [
-		  "Bubble Bear is having fun with his bubbles, but they can distract the driver.",
-		  "When we’re in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use his bubbles until he’s outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
-		],
-		"loopAmount": 1,
-		"frameRate": 7,
-		"isTrigger": true,
-		"audioFile": "MirrorDing.mp3",
-		"thumbScale": "translate(300,275) scale(2.45)",
-		"hint": "I'm soft but shed all over",
-		"hintXValue": 15,
-		"Text": [
-		  "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
-		]
-}
+        {
+            "Name": "Bubblebear",
+            "bannerText": "Bubbles can distract the driver who needs to concentrate.",
+            "postText": [
+                "Bubble Bear is having fun with his bubbles, but they can distract the driver.",
+                "When we’re in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use his bubbles until he’s outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
+            ],
+            "loopAmount": 1,
+            "frameRate": 7,
+            "isTrigger": true,
+            "audioFile": "MirrorDing.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        }
 
-]
+    ]
 }

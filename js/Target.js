@@ -1,141 +1,84 @@
 class Target {
-  constructor(room, targetInfo) {
-    this.room = room;
-    this.isAnimating = false;
-    this.currentFrame = 1;
-    this.currentLoop = 1;
-
-    this.targetInfo = targetInfo;
-    this.targetInfo.isTrigger=this.targetInfo.isTrigger||false;
-    this.loopAmount = this.targetInfo.loopAmount || 1;
-    this.targetSelector = $(`#roomSVG  #${this.targetInfo.Name}`)
-
-    this.targetSelector.one("click", (evt) => {
-
-
-      this.itemClicked(evt)
-
-    })
-
-  }
-
-
-playSound(sound="MirrorDing.mp3"){
-  var soundEffect = ss_soundbits("audio/" + sound);
-  soundEffect.playclip();
-}
-
-
-
-  itemClicked(evt) {
-   this.playSound()
-    setTimeout(  ()=>this.modalAndCubbyShow(evt),500)
- 
-  }
-
-  // initialize the timer variables and start the animation
-
-  modalAndCubbyShow(evt) {
- 
-    if (this.targetInfo.isTrigger) {
-      var cubbyCheck = evt.currentTarget.id.slice(0,8)
-
-      if(cubbyCheck === "cubbySVG"){
-
-      }else{
-       // this.room.removeTarget()
-        var cubbyTarget = `#cubbySVG_${this.targetInfo.Name}`
-        $(cubbyTarget).show(2000)
-        $(cubbyTarget).off().on("click", (evt) => this.itemClicked(evt));
-
-       // $(`#${this.targetInfo.Name}`).hide("1000");
-        this.room.blur.removeHighlightCopy()
-        if (this.room.house.isTutorial && this.room.triggersLeft) {
-
-          this.room.setupTarget(this.room.roomInfo.targets[this.room.currentTargetId])
-        }
-      }
-      //  isTrigger = true;
-    }
-    // var item = roomData.targets[lookup[clickedItem]];
-
-    var itemName = this.targetInfo.Name
-    if (true || !$("#thoughtBubble").length) {
-
-
-      if (!this.room.triggersLeft) {
-        this.room.showHeader = true
-      }
-
-      this.targetModalDialog = new ModalDialog(this.room, this.targetInfo, "postText", this.room.showHeader, this.targetInfo.isTrigger, this)
-      // this.targetModalDialog.displayTargetInfo()
-
-
-
-
-      this.targetSelector.off()
-    }
-
-
-  }
-
-
-  animate(isInternal = false) {
-
-
-    var framesSelector = $(`[id^="${this.targetInfo.Name}-"]`)
-
-    if (framesSelector.length == 0) {
-
-      this.animateDeferred = $.Deferred();
-      this.animateDeferred.resolve("vfdg");
-      return this.animateDeferred.promise();
-
-
-    }
-
-    framesSelector.hide();
-
-    var currentLayer = $(`#${this.targetInfo.Name}-${this.currentFrame}`)
-
-    $(`#${this.targetInfo.Name}-${this.currentFrame}`).show();
-
-    if (currentLayer.length >= 1) {
-
-      this.currentFrame++
-      setTimeout(() => this.animate(true), 2000 / this.targetInfo.frameRate)
-    } else {
-      console.log(this.loopAmount,this.currentLoop)
-      if (this.currentLoop >= this.loopAmount) {
-
-      $(`#${this.targetInfo.Name}-${this.currentFrame-1}`).show();
-      // var framesSelector = $(`[id^="${this.targetInfo.Name}"]`)
-
-        this.animateDeferred.resolve("vfdg")
-    
-      
-        //framesSelector.show(())
-
-      } else {
-
+    constructor(room, targetInfo) {
+        this.room = room;
+        this.isAnimating = false;
         this.currentFrame = 1;
-        this.currentLoop++;
-        this.animate(true);
+        this.currentLoop = 1;
 
-}
-      }
+        this.targetInfo = targetInfo;
+        this.targetInfo.isTrigger = this.targetInfo.isTrigger || false;
+        this.loopAmount = this.targetInfo.loopAmount || 1;
+        this.targetSelector = $(`#roomSVG  #${this.targetInfo.Name}`)
+
+        this.targetSelector.one("click", (evt) => {
 
 
-    
-    //setTimeout(()=>animateDeferred.resolve("vfdg"),4000)
-    if (!isInternal) {
+            this.itemClicked(evt)
 
-      this.animateDeferred = $.Deferred();
-      return this.animateDeferred.promise();
+        })
 
     }
 
 
-  }
-  
-} 
+    playSound(sound = "MirrorDing.mp3") {
+        var soundEffect = ss_soundbits("audio/" + sound);
+        soundEffect.playclip();
+    }
+
+
+
+    itemClicked(evt) {
+        this.playSound()
+        setTimeout(() => this.modalAndCubbyShow(evt), 500)
+
+    }
+
+    // initialize the timer variables and start the animation
+
+    modalAndCubbyShow(evt) {
+
+        if (this.targetInfo.isTrigger) {
+            var cubbyCheck = evt.currentTarget.id.slice(0, 8)
+
+            if (cubbyCheck === "cubbySVG") {
+
+            } else {
+                // this.room.removeTarget()
+                var cubbyTarget = `#cubbySVG_${this.targetInfo.Name}`
+                $(cubbyTarget).show(2000)
+                $(cubbyTarget).off().on("click", (evt) => this.itemClicked(evt));
+
+                // $(`#${this.targetInfo.Name}`).hide("1000");
+                this.room.blur.removeHighlightCopy()
+                if (this.room.house.isTutorial && this.room.triggersLeft) {
+
+                    this.room.setupTarget(this.room.roomInfo.targets[this.room.currentTargetId])
+                }
+            }
+            //  isTrigger = true;
+        }
+        // var item = roomData.targets[lookup[clickedItem]];
+
+        var itemName = this.targetInfo.Name
+        if (true || !$("#thoughtBubble").length) {
+
+
+            if (!this.room.triggersLeft) {
+                this.room.showHeader = true
+            }
+
+            this.targetModalDialog = new ModalDialog(this.room, this.targetInfo, "postText", this.room.showHeader, this.targetInfo.isTrigger, this)
+                // this.targetModalDialog.displayTargetInfo()
+
+
+
+
+            this.targetSelector.off()
+        }
+
+
+    }
+
+
+
+}
