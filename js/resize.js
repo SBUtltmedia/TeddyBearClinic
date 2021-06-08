@@ -14,18 +14,18 @@ var stageTop;
 var stageLeft;
 
 // Fix aspect ratio of the stage
-$(window).resize(function () {
+$(window).resize(function() {
     resizeWindow();
 });
 
 $(resizeWindow)
-// Resize the window
+    // Resize the window
 function resizeWindow() {
     // Get window width and height
-    var w = $(document).width();
-    var h = $(document).height();
-    console.log(w,h)
-    // If the aspect ratio is greater than or equal to 4:3, fix height and set width based on height
+    var w = $(window).width();
+    var h = $(window).height();
+    console.log(w, h)
+        // If the aspect ratio is greater than or equal to 4:3, fix height and set width based on height
     if ((w / h) >= 4 / 3) {
         stageHeight = h;
         stageWidth = (4 / 3) * h;

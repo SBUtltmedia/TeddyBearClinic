@@ -1,5 +1,6 @@
 class Animate {
     constructor(animationName, frameRate, loopAmount = 1) {
+        console.log(animationName, frameRate, loopAmount)
         this.animationName = animationName
         this.frameRate = frameRate
         this.currentFrame = 1

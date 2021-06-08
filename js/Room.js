@@ -36,10 +36,10 @@ class Room {
                 this.makeHint();
                 this.makeHelp().then(() => this.makeRoomTypeException());
                 resizeWindow();
-                if (this.roomInfo.backgroundAnimations) {
+                if (this.roomInfo.backgroundAnimations.length != 0) {
                     for (var i of this.roomInfo.backgroundAnimations) {
-                        console.log("Bananas")
-                        var animate = new Animate(i, 1, 1000)
+                        console.log("Name is", i.animationName, "frameRate is", i.frameRate)
+                        var animate = new Animate(i.animationName, i.frameRate, i.loopAmount)
                         animate.animate().then(() => {})
                     }
                 }

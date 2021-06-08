@@ -2,7 +2,9 @@
     "roomImage": "Parking_Lot_3_2.svg",
     "nextRoom": "Parking_Lot_4_1",
     "completedText": "",
-    "backgroundAnimations": ["Balloons"],
+    "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 10, "loopAmount": 10000 },
+        { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
+    ],
     "targets": [{
             "Name": "Booster",
             "bannerText": "The booster seat is not secured.",

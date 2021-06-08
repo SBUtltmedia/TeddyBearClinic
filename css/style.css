@@ -1,349 +1,356 @@
 body {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#googleDrive {
+    position: absolute;
+    top: 80%;
+    font-size: 2rem;
 }
 
 #screen {
-  position: absolute;
+    position: absolute;
 }
 
 #roomSVG {
-  position: relative;
-  width: 100%;
-  height: 40%;
+    position: relative;
+    width: 100%;
+    height: 40%;
 }
 
 #helpButton {
-  position: absolute;
-  padding: .5rem;
-  font-family: "Lucida Sans", sans-serif;
-  font-size: 2em;
-  border-radius: 100%;
-  border: solid .3rem #666666;
-  background-color: #fff;
-  float: left;
-  z-index: 1;
-  text-align: center;
-  left: 20.5%;
-  bottom: 84%;
-  transition: background-color 0.5s ease;
+    position: absolute;
+    padding: .5rem;
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 2em;
+    border-radius: 100%;
+    border: solid .3rem #666666;
+    background-color: #fff;
+    float: left;
+    z-index: 1;
+    text-align: center;
+    left: 20.5%;
+    bottom: 84%;
+    transition: background-color 0.5s ease;
 }
 
 #helpButton:hover #help {
-  display: block;
+    display: block;
 }
 
 #helpButton:hover {
-  color: #DBFF33
+    color: #DBFF33
 }
 
 #help {
-  display: none;
-  width: 35%;
-  height: auto;
-  background-color: #555;
-  color: #fff;
-  text-align: left;
-  border-radius: .6rem;
-  padding: .8rem 1rem;
-  position: absolute;
-  z-index: 130;
-  margin-left: -3em;
-  left: 10%;
-  bottom: -10%;
-  transition: background-color 0.5s ease;
+    display: none;
+    width: 35%;
+    height: auto;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    border-radius: .6rem;
+    padding: .8rem 1rem;
+    position: absolute;
+    z-index: 130;
+    margin-left: -3em;
+    left: 10%;
+    bottom: -10%;
+    transition: background-color 0.5s ease;
 }
 
 #help {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 #leftBubble.finalCreditsParent {
-  display: flex;
-  justify-content: center;
-  height: 50rem;
+    display: flex;
+    justify-content: center;
+    height: 50rem;
 }
 
 #thoughtBubble.finalCreditsBubble {
-  width: 40%;
+    width: 40%;
 }
 
 #treasureChest {
- 
-  position: absolute;
-  background-color: #331a00;
-  width: 80%;
-  height: 40%;
-  padding: 0 10%;
-  margin: auto;
-  display: none;
-  z-index: 0;
-  /* border-style: solid;
+    position: absolute;
+    background-color: #331a00;
+    width: 80%;
+    height: 40%;
+    padding: 0 10%;
+    margin: auto;
+    display: none;
+    z-index: 0;
+    /* border-style: solid;
   border-width: .5em 7em;
   border-color: #663300; */
 }
 
 ul {
-  padding: 1rem;
-  margin: 1rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #cubbyBox {
-  background-color: white;
+    background-color: white;
 }
 
 .cubbyCopy {
-  margin: auto;
-  height: 80%;
-  width: 100%;
-  border: .2rem solid black;
-  background-color: #663500;
-  transition: background-color 0.5s ease;
+    margin: auto;
+    height: 80%;
+    width: 100%;
+    border: .2rem solid black;
+    background-color: #663500;
+    transition: background-color 0.5s ease;
 }
 
 .cubbyCopy:hover {
-  background-color: #b0916b;
+    background-color: #b0916b;
 }
 
 #cubbyHint {
-  display: none;
-  position: absolute;
-  text-align: center;
-  font-family: " Verdana", sans-serif;
-  font-size: 1.5rem;
-  padding: 1.5rem;
-  width: auto;
-  background-color: #f5f5a9;
-  color: #2b2b2b;
-  z-index: 1;
-  bottom: -98%;
-  border-radius: 10%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-family: " Verdana", sans-serif;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    width: auto;
+    background-color: #f5f5a9;
+    color: #2b2b2b;
+    z-index: 1;
+    bottom: -98%;
+    border-radius: 10%;
 }
 
 #triggersLeft {
-  position: absolute;
-  top: 1.25rem;
-  left: 2.2rem;
-  font-family: "Verdana", sans-serif;
-  font-size: 2em;
-  color: white;
-  padding: 1rem;
-  background-color: green;
-  border-radius: .5rem;
-  border-color: white;
+    position: absolute;
+    top: 1.25rem;
+    left: 2.2rem;
+    font-family: "Verdana", sans-serif;
+    font-size: 2em;
+    color: white;
+    padding: 1rem;
+    background-color: green;
+    border-radius: .5rem;
+    border-color: white;
 }
 
 svg .highlightPart {
-  animation: pulsate 2s infinite;
-  stroke: rgb(255, 0, 0);
-  stroke-width: 1%;
+    animation: pulsate 2s infinite;
+    stroke: rgb(255, 0, 0);
+    stroke-width: 1%;
 }
 
 @keyframes pulsate {
-  0% {
-    opacity: 1
-  }
-
-  50% {
-    opacity: 0
-  }
-
-  100% {
-    opacity: 1
-  }
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 @-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes transform {
-  from {
-    transform: scale(0);
-  }
-
-  to {
-    transform: scale(1);
-  }
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
+
 /* Font Styling for frontYard */
+
 #credits .style1 {
-  font-family: " Verdana", sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
+    font-family: " Verdana", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 #credits .style2 {
-  font-family: " Verdana", sans-serif;
-  font-size: 3rem;
+    font-family: " Verdana", sans-serif;
+    font-size: 3rem;
 }
 
 #credits .style3 {
-  font-family: " Verdana", sans-serif;
-  font-size: 1.8rem;
-  font-weight: bold;
+    font-family: " Verdana", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 #credits .style4 {
-  font-family: " Verdana", sans-serif;
-  font-size: 1.4rem;
-  font-style: italic;
+    font-family: " Verdana", sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 #credits .style5 {
-  font-family: " Verdana", sans-serif;
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #036187
+    font-family: " Verdana", sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #036187
 }
 
 #credits .style6 {
-  font-family: " Verdana", sans-serif;
-  font-size: 2.3rem;
-  font-weight: bold;
+    font-family: " Verdana", sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
 }
 
 #credits .style7 {
-  font-family: " Verdana", sans-serif;
-  font-size: 2rem;
+    font-family: " Verdana", sans-serif;
+    font-size: 2rem;
 }
 
 #credits .style8 {
-  font-family: " Verdana", sans-serif;
-  font-size: 1.8rem;
+    font-family: " Verdana", sans-serif;
+    font-size: 1.8rem;
 }
+
 #credits .style9 {
-  font-family: " Verdana", sans-serif;
-  font-size: 1.2rem;
-
-
-
+    font-family: " Verdana", sans-serif;
+    font-size: 1.2rem;
 }
+
 
 /*end of font styling for frontYard */
+
+
 /*styling of logos in credits*/
+
 .SBlogos {
-  width: 20rem;
+    width: 20rem;
 }
 
 .creditimages {
-  width: 10rem;
+    width: 10rem;
 }
 
+
 /* Credits Animations Controls and Positioning */
+
 #creators {
-  opacity: 0;
-  text-align: center;
-  top: 10%;
-  animation: fadeIn, fadeOut;
-  animation-duration: 2s, 2s;
-  animation-iteration-count: 1, 1;
-  animation-delay: 0s, 4s;
-  animation-fill-mode: forwards, forwards;
+    opacity: 0;
+    text-align: center;
+    top: 10%;
+    animation: fadeIn, fadeOut;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: 1, 1;
+    animation-delay: 0s, 4s;
+    animation-fill-mode: forwards, forwards;
 }
 
 #developers {
-  opacity: 0;
-  text-align: center;
-  top: -50%;
-  animation: fadeIn, fadeOut;
-  animation-duration: 2s, 2s;
-  animation-iteration-count: 1, 1;
-  animation-delay: 6s, 10s;
-  animation-fill-mode: forwards, forwards;
+    opacity: 0;
+    text-align: center;
+    top: -50%;
+    animation: fadeIn, fadeOut;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: 1, 1;
+    animation-delay: 6s, 10s;
+    animation-fill-mode: forwards, forwards;
 }
 
 #technicaldesign {
-  position: relative;
-  top: -145%;
-  opacity: 0;
-  text-align: center;
-  animation: fadeIn, fadeOut;
-  animation-duration: 2s, 1s;
-  animation-iteration-count: 1, 1;
-  animation-delay: 12s, 17s;
-  animation-fill-mode: forwards, forwards;
+    position: relative;
+    top: -145%;
+    opacity: 0;
+    text-align: center;
+    animation: fadeIn, fadeOut;
+    animation-duration: 2s, 1s;
+    animation-iteration-count: 1, 1;
+    animation-delay: 12s, 17s;
+    animation-fill-mode: forwards, forwards;
 }
 
 #contentreview {
-  opacity: 0;
-  text-align: center;
-  animation: fadeIn, fadeOut;
-  animation-duration: 2s, 2s;
-  animation-iteration-count: 1, 1;
-  animation-delay: 18s, 22s;
-  animation-fill-mode: forwards, forwards;
-  top: 0%;
+    opacity: 0;
+    text-align: center;
+    animation: fadeIn, fadeOut;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: 1, 1;
+    animation-delay: 18s, 22s;
+    animation-fill-mode: forwards, forwards;
+    top: 0%;
 }
 
 #sources {
-  transform: scale(0);
-  opacity: 0;
-  text-align: center;
-  animation: fadeIn, transform;
-  top: 0;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-delay: 24s;
-  animation-fill-mode: forwards;
+    transform: scale(0);
+    opacity: 0;
+    text-align: center;
+    animation: fadeIn, transform;
+    top: 0;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 24s;
+    animation-fill-mode: forwards;
 }
 
-#creators, #developers {
-  position: relative;
+#creators,
+#developers {
+    position: relative;
 }
 
-#sources, #contentreview {
-  position: absolute;
+#sources,
+#contentreview {
+    position: absolute;
 }
 
 #credits {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Animations used in the Credits */
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
 
-  to {
-    opacity: 0;
-  }
+/* Animations used in the Credits */
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes fadeIn {
-  from {
-    /* transform: scale(0); */
-    opacity: 0;
-  }
-
-  to {
-    /* transform: scale(1); */
-    opacity: 1;
-  }
+    from {
+        /* transform: scale(0); */
+        opacity: 0;
+    }
+    to {
+        /* transform: scale(1); */
+        opacity: 1;
+    }
 }
 
 @keyframes transform {
-  from {
-    transform: scale(0);
-  }
-
-  to {
-    transform: scale(1);
-  }
-
-  /*
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+    /*
     90% {
         opacity:1;
 
@@ -355,86 +362,84 @@ svg .highlightPart {
 }
 
 @keyframes crawl {
-  0% {
-    top: 0%
-  }
-
-  100% {
-    top: -100%
-  }
+    0% {
+        top: 0%
+    }
+    100% {
+        top: -100%
+    }
 }
 
 #start {
-  position: absolute;
-  justify-content: center;
-  width: 30%;
-  height: 8%;
-  left: 5%;
-  background-color: white;
-  border-radius: 2rem;
-  padding-top: 2%;
-  border: .1rem solid #6699ff;
+    position: absolute;
+    justify-content: center;
+    width: 30%;
+    height: 8%;
+    left: 5%;
+    background-color: white;
+    border-radius: 2rem;
+    padding-top: 2%;
+    border: .1rem solid #6699ff;
 }
 
 #start:hover {
-  background-color: #94d9dc;
+    background-color: #94d9dc;
 }
 
 #buttonText {
-  color: #6699ff;
-  text-decoration: none;
+    color: #6699ff;
+    text-decoration: none;
 }
 
 #buttonText:hover {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 #welcomeBody {
-  background-image: url('../img/TileAsthma_1INCH.png');
-  background-repeat: repeat;
-  background-color: #94d9dc;
-
+    background-image: url('../img/TileAsthma_1INCH.png');
+    background-repeat: repeat;
+    background-color: #94d9dc;
 }
 
 #welcomescreen {
-  margin: 5rem;
-  border-radius: 10rem;
-  background-color: white;
-  position: absolute;
-  height: 80%;
-  width: 90%;
+    margin: 5rem;
+    border-radius: 10rem;
+    background-color: white;
+    position: absolute;
+    height: 80%;
+    width: 90%;
 }
 
 #welcomescreen img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10%;
-  width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    width: 100%;
 }
 
 #welcomeTitle {
-  font-family: Verdana;
-  font-size: 4rem;
-  text-align: center;
-  margin: 3rem 1rem 1rem 1rem;
+    font-family: Verdana;
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 1rem 1rem 1rem;
 }
 
 #descriptionBox {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 
 #welcomeDescription {
-  font-family: Verdana;
-  font-size: 2.2rem;
-  text-align: center;
-  margin: 2rem 0rem 2rem 1rem;
-  width: 40%;
+    font-family: Verdana;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 2rem 0rem 2rem 1rem;
+    width: 40%;
 }
 
 #Dollhouse {
-  width: 60%;
+    width: 60%;
 }
