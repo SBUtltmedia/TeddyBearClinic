@@ -1,44 +1,46 @@
 {
-	"roomImage": "Parking_Lot_4_1.svg",
-	"nextRoom": "Parking_Lot_4_1",
-	"completedText": "",
-	"targets": [
-	  {
-		"Name": "Sunglasses",
-		"bannerText": "The booster seat is not secured.",
-		"postText": [
-		  "Popstarbear is wearing sunglasses to make it easier to see the </li></ul>"
-		],
-		"isGood": true,
-		"loopAmount": 1,
-		"frameRate": 30,
-		"isTrigger": true,
-		"audioFile": "MirrorDing.mp3",
-		"thumbScale": "translate(300,275) scale(2.45)",
-		"hint": "I'm soft but shed all over",
-		"hintXValue": 15,
-		"Text": [
-		  "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
-		]
-	},	  
+    "roomImage": "Parking_Lot_4_1.svg",
+    "nextRoom": "Parking_Lot_4_1",
+    "completedText": "",
+    "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
+        { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
+    ],
+    "targets": [{
+            "Name": "Sunglasses",
+            "bannerText": "The booster seat is not secured.",
+            "postText": [
+                "Drivers should keep sunglasses nearby in case the sun gets too bright while driving."
+            ],
+            "isGood": true,
+            "loopAmount": 1,
+            "frameRate": 30,
+            "isTrigger": true,
+            "audioFile": "MirrorDing.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },
 
-			{
-			  "Name": "Beachbear",
-			  "bannerText": "The booster seat is not secured.",
-			  "postText": [
-				"Beach Bear is riding in the front seat.  It is not safe for kids under 13 years to ride in the front seat.",
-				"It is safest for all kids to ride in the backseat at least until they turn 13 years old. Airbags in the front are designed to protect adults and can be dangerous for kids."
-			  ],
-			  "loopAmount": 1,
-			  "frameRate": 10,
-			  "isTrigger": true,
-			  "audioFile": "MirrorDing.mp3",
-			  "thumbScale": "translate(300,275) scale(2.45)",
-			  "hint": "I'm soft but shed all over",
-			  "hintXValue": 15,
-			  "Text": [
-				"<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
-			  ]
-	  }
-	]
-  }
+        {
+            "Name": "Beachbear",
+            "bannerText": "The booster seat is not secured.",
+            "postText": [
+                "Beach Bear is riding in the front seat.  It is not safe for kids under 13 years to ride in the front seat.",
+                "It is safest for all kids to ride in the backseat at least until they turn 13 years old. Airbags in the front are designed to protect adults and can be dangerous for kids."
+            ],
+            "loopAmount": 1,
+            "frameRate": 10,
+            "isTrigger": true,
+            "audioFile": "MirrorDing.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        }
+    ]
+}
