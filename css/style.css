@@ -4,6 +4,16 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background-image: url(../img/Background.svg);
+    background-size: 50%;
+    background-color: #CBE5F5;
+}
+
+#speakerIcon {
+    position: absolute;
+    top: 2%;
+    width: 5%;
+    left: 94%;
 }
 
 #googleDrive {
@@ -16,9 +26,18 @@ body {
     position: absolute;
 }
 
+#roomSVG>svg {
+    border-radius: 3rem;
+    border-width: .5rem;
+    border-style: solid;
+    border-color: green;
+}
+
 #roomSVG {
     position: relative;
-    width: 100%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
     height: 40%;
 }
 

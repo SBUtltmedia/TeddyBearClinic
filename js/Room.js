@@ -27,7 +27,6 @@ class Room {
 
         this.loadRoomImage(this.roomInfo).then(
             () => {
-                console.log($($("#Background_Animation").children()[0]).children())
                 this.blur = new Blur();
                 this.blur.injectFilter();
                 this.makeTreasureChest();
@@ -89,14 +88,22 @@ class Room {
 
 
     }
-
+    // img src = "img/resources/soundon_white.svg"
     loadRoomImage(roomData) {
         var deferred = jQuery.Deferred();
         var roomDiv = $("<div/>", {
             id: "roomSVG"
         })
+        var speakerDiv = $("<div/>", {
+            id: "speakerIcon",
+
+        })
+        var speakerImg = $("<img/>", {
+            src: "img/resources/soundon_white.svg"
+        })
         $("#screen").append(roomDiv)
         $("#roomSVG").load(`img/rooms/${roomData.roomImage}`, () => {
+            $("#roomSVG").append(speakerDiv.append(speakerImg))
             deferred.resolve("hurray")
         })
 

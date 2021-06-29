@@ -45,13 +45,13 @@ class ModalDialog {
 
         if (this.room.house.autoplay) {
 
-            $("#audioTag")[0].play();
+            this.soundEffect.playclip()
         } else {
 
-            $("#audioTag")[0].pause();
+            this.soundEffect.pauseclip()
         }
 
-
+        this.room.house.toggleAutoplay();
     }
 
     makeDOMItems() {
@@ -92,6 +92,11 @@ class ModalDialog {
         })
     }
     populateBubble() {
+        this.soundEffect = ss_soundbits(`audio/bubbleSpeech/bubble1/${this.room.house.currentRoom}_${this.target.Name}.mp3`);
+        if (this.audioPlay == "audioOn") {
+
+            setTimeout(this.soundEffect.playclip, 1000);
+        }
         $("#roomSVG").append(this.popup)
         console.log(this.target.isGood)
         if (this.target.isGood) {
