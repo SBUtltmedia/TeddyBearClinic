@@ -85,18 +85,15 @@ class ModalDialog {
 
 
             $("#bubbleContent").html(this.target[this.textType][1])
-
+            this.room.soundEffect = ss_soundbits(`audio/bubbleSpeech/bubble1/${this.room.house.currentRoom}_${this.target.Name}_1.mp3`);
             $(".background1Border").removeClass("background1Border").addClass(this.border)
             $(".background1").removeClass("background1").addClass(this.background)
             $("#thoughtBubble").show()
         })
     }
     populateBubble() {
-        this.soundEffect = ss_soundbits(`audio/bubbleSpeech/bubble1/${this.room.house.currentRoom}_${this.target.Name}.mp3`);
-        if (this.audioPlay == "audioOn") {
 
-            setTimeout(this.soundEffect.playclip, 1000);
-        }
+
         $("#roomSVG").append(this.popup)
         console.log(this.target.isGood)
         if (this.target.isGood) {
@@ -114,6 +111,7 @@ class ModalDialog {
         console.log(this)
 
         $("#bubbleContent").html(this.target[this.textType][0])
+        this.room.soundEffect = ss_soundbits(`audio/bubbleSpeech/bubble1/${this.room.house.currentRoom}_${this.target.Name}_0.mp3`);
 
 
         $("#thoughtBubble").on("click", () => {

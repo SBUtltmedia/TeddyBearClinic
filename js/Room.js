@@ -1,5 +1,6 @@
 class Room {
     constructor(house, roomInfo) {
+
         this.house = house;
         this.showHeader = true;
         this.roomInfo = roomInfo;
@@ -97,22 +98,45 @@ class Room {
         var speakerDiv = $("<div/>", {
             id: "speakerIcon",
 
-        })
-        var speakerImg = $("<img/>", {
-            src: "img/resources/soundon_white.svg"
-        })
+        }).on("click", () => { this.toggleSpokenAudio() })
+        this.setSpeakerIcon();
         $("#screen").append(roomDiv)
         $("#roomSVG").load(`img/rooms/${roomData.roomImage}`, () => {
-            $("#roomSVG").append(speakerDiv.append(speakerImg))
+            $("#roomSVG").append(speakerDiv)
             deferred.resolve("hurray")
         })
 
         return deferred.promise();
     }
+    toggleSpokenAudio() {
+
+        this.house.toggleAutoplay();
+        this.setSpeakerIcon();
+        this.playNarration();
+    }
+    setSpeakerIcon() {
+        if (this.house.autoplay) {
+            $("#speakerIcon").removeClass("audioOff")
+        } else {
+            $("#speakerIcon").addClass("audioOff")
+        }
+    }
     animateBackground() {
 
     }
 
+    playNarration() {
+
+
+        if (this.house.autoplay) {
+
+            this.soundEffect.playclip()
+        } else {
+
+            this.soundEffect.pauseclip()
+        }
+
+    }
     setupTargets() {
 
         for (var target of this.roomInfo.targets) {

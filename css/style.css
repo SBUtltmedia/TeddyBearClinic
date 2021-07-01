@@ -65,6 +65,14 @@ body {
     color: #DBFF33
 }
 
+#speakerIcon {
+    float: left;
+    background-image: url(../img/resources/soundon_white.svg);
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
 #help {
     display: none;
     width: 35%;
