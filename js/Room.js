@@ -127,15 +127,17 @@ class Room {
 
     playNarration() {
 
+        if (this.soundEffect) {
 
-        if (this.house.autoplay) {
 
-            this.soundEffect.playclip()
-        } else {
+            if (this.house.autoplay) {
 
-            this.soundEffect.pauseclip()
+                this.soundEffect.playclip()
+            } else {
+
+                this.soundEffect.pauseclip()
+            }
         }
-
     }
     setupTargets() {
 

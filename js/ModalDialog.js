@@ -7,52 +7,14 @@ class ModalDialog {
         this.target = target;
         this.textType = textType;
         this.audioPlay = this.room.house.autoplay ? 'audioOn' : 'audioOff';
-        this.displayTargetInfo();
+        this.makeDOMItems();
         console.log(target)
 
     }
 
 
-    displayTargetInfo() {
 
 
-        this.makeDOMItems();
-        this.makeModalEvents();
-        setTimeout(() => this.changePlayState(), 1000)
-    }
-
-    makeModalEvents() {
-
-        $("#AudioButton").on("click", () => this.toggleSpokenAudio())
-
-
-
-
-
-
-    }
-
-
-    toggleSpokenAudio() {
-        $("#AudioButton").toggleClass("audioOff audioOn")
-        this.room.house.autoplay = !this.room.house.autoplay;
-        this.changePlayState();
-    }
-
-
-    changePlayState() {
-
-
-        if (this.room.house.autoplay) {
-
-            this.soundEffect.playclip()
-        } else {
-
-            this.soundEffect.pauseclip()
-        }
-
-        this.room.house.toggleAutoplay();
-    }
 
     makeDOMItems() {
 
@@ -86,6 +48,7 @@ class ModalDialog {
 
             $("#bubbleContent").html(this.target[this.textType][1])
             this.room.soundEffect = ss_soundbits(`audio/bubbleSpeech/bubble1/${this.room.house.currentRoom}_${this.target.Name}_1.mp3`);
+            this.room.playNarration();
             $(".background1Border").removeClass("background1Border").addClass(this.border)
             $(".background1").removeClass("background1").addClass(this.background)
             $("#thoughtBubble").show()
@@ -112,6 +75,7 @@ class ModalDialog {
 
         $("#bubbleContent").html(this.target[this.textType][0])
         this.room.soundEffect = ss_soundbits(`audio/bubbleSpeech/bubble1/${this.room.house.currentRoom}_${this.target.Name}_0.mp3`);
+        this.room.playNarration();
 
 
         $("#thoughtBubble").on("click", () => {
