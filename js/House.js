@@ -2,6 +2,10 @@ class House {
 
     constructor() {
         this.autoplay = localStorage.getItem('autoplay') || true;
+        if (this.autoplay == "false") {
+            this.autoplay = false
+        }
+
         this.currentRoom = "Parking_Lot_1_1"
         var checkLocalStorage = localStorage.getItem('currentRoom')
         if (checkLocalStorage) {

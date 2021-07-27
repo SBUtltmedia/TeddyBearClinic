@@ -32,7 +32,6 @@ class Animate {
             this.currentFrame++
                 setTimeout(() => this.animate(true), 2000 / this.frameRate)
         } else {
-            console.log(this.loopAmount, this.currentLoop)
             if (this.currentLoop >= this.loopAmount) {
 
                 $(`#${this.animationName}-${this.currentFrame - 1}`).show();

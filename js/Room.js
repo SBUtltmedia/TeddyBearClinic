@@ -99,10 +99,11 @@ class Room {
             id: "speakerIcon",
 
         }).on("click", () => { this.toggleSpokenAudio() })
-        this.setSpeakerIcon();
+
         $("#screen").append(roomDiv)
         $("#roomSVG").load(`img/rooms/${roomData.roomImage}`, () => {
             $("#roomSVG").append(speakerDiv)
+            this.setSpeakerIcon();
             deferred.resolve("hurray")
         })
 
