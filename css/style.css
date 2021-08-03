@@ -9,6 +9,23 @@ body {
     background-color: #CBE5F5;
 }
 
+.splash {
+    width: 100%;
+}
+
+#splashBubble {
+    position: absolute;
+    width: 52%;
+    height: 41.5%;
+    top: 39.5%;
+    left: 29.75%;
+    border-radius: 3rem;
+    border-color: rgb(8, 203, 138);
+    background-color: rgb(172, 255, 236);
+    border-width: .5rem;
+    border-style: solid;
+}
+
 #speakerIcon {
     position: absolute;
     top: 2%;
