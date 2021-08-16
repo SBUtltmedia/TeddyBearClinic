@@ -16,9 +16,9 @@ body {
 #splashBubble {
     position: absolute;
     width: 52%;
-    height: 41.5%;
-    top: 39.5%;
-    left: 29.75%;
+    height: 30.5%;
+    top: 27.65%;
+    left: 29.35%;
     border-radius: 3rem;
     border-color: rgb(8, 203, 138);
     background-color: rgb(172, 255, 236);

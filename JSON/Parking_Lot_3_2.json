@@ -6,11 +6,11 @@
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
     ],
     "targets": [{
-            "Name": "Booster",
-            "bannerText": "The booster seat is not secured.",
+            "Name": "Babybear",
+            "bannerText": "This carseat should face the rear.",
             "postText": [
-                "Good find! You saw that the booster seat was not buckled to the car.  Even when we’re not sitting in a booster seat, we should still make sure it’s buckled in.",
-                "Now the seat is buckled.  This will keep the seat in place so that it won’t move around in case the car stops short."
+                "Good find! Some car seats are designed to face the back of the car.",
+                "Now Babybear is safe because the car seat is being used correctly."
             ],
             "loopAmount": 1,
             "frameRate": 10,
