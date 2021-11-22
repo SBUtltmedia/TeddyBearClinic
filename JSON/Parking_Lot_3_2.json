@@ -9,7 +9,7 @@
             "Name": "Babybear",
             "bannerText": "This carseat should face the rear.",
             "postText": [
-                "Good find! Some car seats are designed to face the back of the car.",
+                "Some car seats are designed to face the back of the car.",
                 "Now Babybear is safe because the car seat is being used correctly."
             ],
             "loopAmount": 1,
@@ -28,8 +28,8 @@
             "Name": "Flowerbear",
             "bannerText": "Both of Flowerbear's knees have to be over the seat to be safe.",
             "postText": [
-                "“Flower Bear” is not sitting with their knees bent over the edge of the seat.  This is not a safe way to ride in the car.",
-                "Before riding in the seatbelt, kids should be able to pass this 5 step test: <ol> <li> Knees bend comfortably at the edge </li> <li> Bottom is all the way back in the seat </li> <li> Lap belt lies low on the hips, at the top of the thighs </li> <li> Shoulder belt crosses the shoulder </li> <li> They can ride like this the whole time </li> </ol>"
+                "Flower Bear is not sitting with their knees bent over the edge of the seat.  This is not a safe way to ride in the car.",
+                "To ride safely, we should be sitting up tall, with our knees bent over the edge of the seat."
             ],
             "loopAmount": 1,
             "frameRate": 10,
@@ -47,8 +47,8 @@
             "Name": "Bubblebear",
             "bannerText": "Bubbles can distract the driver who needs to concentrate.",
             "postText": [
-                "Bubble Bear is having fun with his bubbles, but they can distract the driver.",
-                "When we’re in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use his bubbles until he’s outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
+                "Bubble Bear is having fun with their bubbles, but they can distract the driver.",
+                "When we’re in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use their bubbles until he’s outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
             ],
             "loopAmount": 1,
             "frameRate": 7,

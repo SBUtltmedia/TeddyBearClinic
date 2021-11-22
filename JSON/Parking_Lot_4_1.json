@@ -28,8 +28,8 @@
             "Name": "Beachbear",
             "bannerText": "The booster seat is not secured.",
             "postText": [
-                "Beach Bear is riding in the front seat.  It is not safe for kids under 13 years to ride in the front seat.",
-                "It is safest for all kids to ride in the backseat at least until they turn 13 years old. Airbags in the front are designed to protect adults and can be dangerous for kids."
+                "Uh oh! Beach Bear tried riding in the front seat, but they are too young.",
+                "It is safest for all kids to ride in the backseat at least until they turn 13 years old. Airbags in the front are designed to protect adults and they can be dangerous for kids."
             ],
             "loopAmount": 1,
             "frameRate": 10,

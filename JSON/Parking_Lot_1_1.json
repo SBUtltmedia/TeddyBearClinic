@@ -9,11 +9,11 @@
         "Name": "Chefbear",
         "bannerText": "Chef Bear only has one hand on the steering wheel.",
         "postText": [
-            "Reconsidering Chef Bear </li></ul>",
-            "Maybe add two hands on wheel as good thing in stead of one hand being bad?  </li></ul>"
+            "Chefbear only has one hand on the steering wheel when they drink from their waterbottle. </li></ul>",
+            "It's always safe for drivers to have two hands on the steering wheel.  </li></ul>"
         ],
         "loopAmount": 1,
-        "frameRate": 15,
+        "frameRate": 5,
         "isTrigger": true,
         "audioFile": "Steer.wav",
         "thumbScale": "translate(300,275) scale(2.45)",
