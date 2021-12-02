@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 650 368.8" style="enable-background:new 0 0 650 368.8;" xml:space="preserve">
+<style type="text/css">
+</style>
+<rect x="35" y="18" class="st0" id="buttoncreate" width="552" height="105"/>
+<text transform="matrix(1 0 0 1 35 26.52)" class="st1 st2">TEXT</text>
+<rect x="51" y="174" class="st0" width="544" height="99"/>
+<text transform="matrix(1 0 0 1 51 182.52)" class="st1 st2">TEXT</text>
+<rect x="115" y="60" width="462" height="142"/>
+<foreignObject x="391.4" y="84.9" width="210" height="18">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<input id="line1Input" value="fadfasdfasdfa"></input>
+			</div>
+		</foreignObject>
+
+		<foreignObject x="392.1" y="152.6" width="210" height="18">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<input id="line2Input" value="fadfasdfasdfa"></input>
+			</div>
+		</foreignObject>
+</svg>

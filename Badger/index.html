@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="//code.jquery.com/jquery-1.11.0.js"></script>
+    <script src="script.js"></script>
+    <style>
+        @keyframes create {
+            from {
+                font-size: 18px;
+            }
+            to {
+                font-size: 21px;
+            }
+        }
+        
+        @keyframes out {
+            from {
+                font-size: 21px;
+            }
+            to {
+                font-size: 18px;
+            }
+        }
+        
+        .createPressed {
+            fill: #d42632 !important;
+        }
+        
+        .createPressedEnd {
+            fill: #ba1e29 !important;
+        }
+        
+        .createPressedIn {
+            fill: #9e131c !important;
+        }
+        
+        .createHover {
+            animation-duration: .6s;
+            animation-name: create;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+        
+        .createOut {
+            animation-duration: .6s;
+            animation-name: out;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+        
+        .createLoading {
+            animation-duration: .6s;
+            animation-name: create;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        #badgeHolder {
+            position: absolute;
+            top: 0px;
+            width: 70%;
+        }
+        
+        #createLabel {
+            pointer-events: none;
+        }
+        
+        #buttonsSelected {
+            display: block;
+        }
+        
+        #button2press,
+        #button3press,
+        #buttoncreatepress {
+            display: none;
+        }
+        
+        #pressButtons g {
+            cursor: pointer;
+        }
+        
+        #buttoncreate {
+            cursor: pointer;
+        }
+        
+        #congrats {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="makerHolder">
+    </div>
+    <div id="badgeHolder">
+    </div>
+    <div id="linkHolder"></div>
+
+    <canvas id="canvas" style="display:none;" width=2500 height=1912></canvas>
+
+</body>
+
+</html>
