@@ -6,6 +6,7 @@ var ctxt;
 var fontSize = [];
 var cutOff = [null, 24, 8]
 var shrinkRate = [, .4, .45]
+var linetext=[];
 $(function() {
 
     myCanvas = document.getElementById("canvas");
@@ -26,6 +27,21 @@ $(function() {
             setLineText(2)
             hideAllButtons()
             showButton(4)
+            $('#line1Input').on("click",function() {
+            
+                if (firstFocus1) {
+                    $('#line1Input').val("");
+                    firstFocus1 = false;
+                }
+            });
+    
+            $('#line2Input').on("click",function() {
+                if (firstFocus2) {
+                    $('#line2Input').val("");
+                    firstFocus2 = false;
+                }
+            });
+    
             $('#line1Input,#line2Input').on("keyup", function(evt) {
 
                     var whichLine = evt.currentTarget.id.split("line")[1].split("Input")[0];
@@ -92,20 +108,7 @@ $(function() {
 
 
 
-        $('#line1Input').focus(function() {
-            if (firstFocus1) {
-                $('#line1Input').val("");
-                firstFocus1 = false;
-            }
-        });
-
-        $('#line2Input').focus(function() {
-            if (firstFocus2) {
-                $('#line2Input').val("");
-                firstFocus2 = false;
-            }
-        });
-
+ 
 
         $("#pressButtons g").on("click", handleButtonPress)
 
@@ -215,7 +218,7 @@ function showButton(i) {
 
 function download() {
 
-    console.log("fds")
+
     image = document.getElementById("canvas").toDataURL("image/png;base64") //.replace(/^data:image\/(png|jpg);base64,/, "")
     var lnk = document.createElement('a'),
         e;

@@ -49,10 +49,6 @@
 		</g>
 	</g>
 </g>
-<rect x="270" y="53" class="st2" width="343" height="87"/>
-<text transform="matrix(1 0 0 1 270 61.0039)" class="st3 st4">Your Name</text>
-<rect x="276" y="161" class="st2" width="298" height="123"/>
-<text transform="matrix(1 0 0 1 276 169.0039)" class="st3 st4">Your school</text>
-<rect x="238" y="267" class="st2" width="320" height="75"/>
+
 <rect id="buttonCreate" x="372" y="237" class="st5" width="223" height="85"/>
 </svg>
