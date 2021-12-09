@@ -1,0 +1,116 @@
+
+    @keyframes create {
+        from {
+            font-size: 18px;
+        }
+        to {
+            font-size: 21px;
+        }
+    }
+    
+    @keyframes out {
+        from {
+            font-size: 21px;
+        }
+        to {
+            font-size: 18px;
+        }
+    }
+    #line1Input,#line2Input{
+        font-size:41px;
+        height:48px;
+        line-height: 48px; 
+        text-align: center;
+        border-width:0px;
+        border:none;
+        font-family: Effra-Light, Effra;
+    }
+
+    #line1,#line2{
+        font-size:41px;
+        height:48px;
+        line-height: 48px; 
+        text-anchor:middle;
+        font-family: Effra-Light, Effra;
+     
+    }
+
+    .createPressed {
+        fill: #d42632 !important;
+    }
+    
+    .createPressedEnd {
+        fill: #ba1e29 !important;
+    }
+    
+    .createPressedIn {
+        fill: #9e131c !important;
+    }
+    
+    .createHover {
+        animation-duration: .6s;
+        animation-name: create;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    
+    .createOut {
+        animation-duration: .6s;
+        animation-name: out;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    
+    .createLoading {
+        animation-duration: .6s;
+        animation-name: create;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    #badgeHolder {
+        position: absolute;
+        top: 0px;
+        width: 70%;
+        margin:0;
+        padding:0;
+    }
+    
+    #createLabel {
+        pointer-events: none;
+    }
+    
+    #buttonsSelected {
+        display: block;
+    }
+    
+    #button2press,
+    #button3press,
+    #buttoncreatepress {
+        display: none;
+    }
+    
+    #pressButtons g {
+        cursor: pointer;
+    }
+    
+    #buttoncreate {
+        cursor: pointer;
+    }
+    
+    #congrats {
+        cursor: pointer;
+    }
+    #makerHolder {
+        position:absolute;
+        left: 80%;
+        background-color: #ba001d;
+        color: white;
+        padding: 2rem;
+        font-family: Effra-Medium;
+        font-size: 2rem;
+    }
+    #makerHolder:hover{
+        cursor:pointer
+
+    }

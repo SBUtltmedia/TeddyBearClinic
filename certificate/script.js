@@ -17,7 +17,7 @@ $(function() {
 
 
 
-    $("#makerHolder").load("maker8.svg", function() {
+
 
 
         $("#badgeHolder").load(svgImage, function() {
@@ -91,7 +91,7 @@ $(function() {
 
 
 
-            $("#buttonCreate").on("mouseup", function() {
+            $("#makerHolder").on("mouseup", function() {
                 console.log("hello")
 
                 toggleWaiting()
@@ -114,7 +114,7 @@ $(function() {
 
 
 
-    });
+
 
     function handleButtonPress(evt) {
 
@@ -220,8 +220,7 @@ function download() {
 
 
     image = document.getElementById("canvas").toDataURL("image/png;base64") //.replace(/^data:image\/(png|jpg);base64,/, "")
-    var lnk = document.createElement('a'),
-        e;
+    var lnk = document.createElement('a')
     lnk.download = `${$('#line1').text()}_${$('#line2').text()}`;
     lnk.href = image;
     if (document.createEvent) {
@@ -265,15 +264,16 @@ function download() {
 }
 
 function updateDownloadURL() {
-    console.log("Howdy")
+   
     $('foreignObject').remove()
     var img = new Image;
     // img.src = url;
     img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent($('#badgeHolder').html());
-
+    let width= $('canvas').attr("width")
+    let height= $('canvas').attr("height")
     img.addEventListener('load', function() {
 
-        ctxt.drawImage(this, 0, 0, 2500, 1912);
+        ctxt.drawImage(this, 0, 0, width, height);
         image = document.getElementById("canvas").toDataURL("image/png")
             .replace("image/png", "image/octet-stream");
 
