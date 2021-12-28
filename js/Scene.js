@@ -1,10 +1,10 @@
-class Room {
-    constructor(house, roomInfo) {
+class Scene {
+    constructor(game, roomInfo) {
 
-        this.house = house;
+        this.game = game;
         this.showHeader = true;
         this.roomInfo = roomInfo;
-        this.roomName = this.house.currentRoom;
+        this.roomName = this.game.currentRoom;
         this.totalTriggers = roomInfo.targets.reduce((total, target) => {
 
             if (target.isTrigger) {
@@ -14,7 +14,7 @@ class Room {
 
         this.triggersLeft = this.totalTriggers;
         this.targets = []
-        if (this.house.isTutorial) {
+        if (this.game.isTutorial) {
             this.showHeader = false;
             this.currentTargetId = 0;
         }
@@ -55,7 +55,7 @@ class Room {
         console.log(this.roomName)
         if (this.roomName.replace("%20", " ") == "Front%20Yard".replace("%20", " ")) {
 
-            setTimeout(() => this.house.Room.targets[0].animate(false), 1000);
+            setTimeout(() => this.game.Scene.targets[0].animate(false), 1000);
 
             $.get("credits.html", (data) => {
 
@@ -111,12 +111,12 @@ class Room {
     }
     toggleSpokenAudio() {
 
-        this.house.toggleAutoplay();
+        this.game.toggleAutoplay();
         this.setSpeakerIcon();
         this.playNarration();
     }
     setSpeakerIcon() {
-        if (this.house.autoplay) {
+        if (this.game.autoplay) {
             $("#speakerIcon").removeClass("audioOff")
         } else {
             $("#speakerIcon").addClass("audioOff")
@@ -131,7 +131,7 @@ class Room {
         if (this.soundEffect) {
 
 
-            if (this.house.autoplay) {
+            if (this.game.autoplay) {
 
                 this.soundEffect.playclip()
             } else {
@@ -151,7 +151,7 @@ class Room {
     setupTarget(target, isPost = true) {
 
         this.targets.push(new Target(this, target, true));
-        if (this.house.isTutorial) {
+        if (this.game.isTutorial) {
             this.blur.highlightComponent(`#${target.Name}`);
         }
     }
@@ -164,7 +164,7 @@ class Room {
 
         this.makeTriggerCounter()
         if (!this.triggersLeft) {
-            this.house.currentRoom
+            this.game.currentRoom
         }
     }
 

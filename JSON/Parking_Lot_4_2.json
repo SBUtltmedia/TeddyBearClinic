@@ -1,6 +1,6 @@
 {
     "roomImage": "Parking_Lot_4_2.svg",
-    "nextRoom": "Parking_Lot_4_2",
+    "nextRoom": "Certificate",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 30, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }

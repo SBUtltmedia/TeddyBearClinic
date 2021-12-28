@@ -1,11 +1,11 @@
 class ModalDialog {
-  constructor(room, target, textType, showHeader, isTrigger = true) {
+  constructor(scene, target, textType, showHeader, isTrigger = true) {
     this.isTrigger = isTrigger;
-    this.room = room;
+    this.scene = scene;
     this.showHeader = showHeader;
     this.target = target;
     this.textType = textType;
-    this.audioPlay = this.room.house.autoplay ? 'audioOn' : 'audioOff';
+    this.audioPlay = this.scene.game.autoplay ? 'audioOn' : 'audioOff';
     this.displayTargetInfo();
 
 
@@ -32,10 +32,10 @@ class ModalDialog {
 
       this.closeModalDialog();
 
-      if (!this.room.triggersLeft) {
-        this.room.house.currentRoom = this.room.roomInfo.nextRoom;
-        this.room.house.isTutorial = false;
-        setTimeout(()=>this.room.house.loadRoom(),1000)
+      if (!this.scene.triggersLeft) {
+        this.scene.game.currentRoom = this.scene.roomInfo.nextRoom;
+        this.scene.game.isTutorial = false;
+        setTimeout(()=>this.scene.game.loadRoom(),1000)
 
 
       }
@@ -46,14 +46,14 @@ class ModalDialog {
 
   toggleSpokenAudio() {
     $("#AudioButton").toggleClass("audioOff audioOn")
-    this.room.house.autoplay = !this.room.house.autoplay;
+    this.scene.game.autoplay = !this.scene.game.autoplay;
     this.changePlayState();
   }
 
 
   changePlayState() {
 
-    if (this.room.house.autoplay) {
+    if (this.scene.game.autoplay) {
 
       $("#audioTag")[0].play();
     } else {
@@ -67,7 +67,7 @@ class ModalDialog {
   makeDOMItems() {
 
 
-if(this.room.house.autoplay){
+if(this.scene.game.autoplay){
   var audioButton="audioOn"
 }
 else{
@@ -107,7 +107,7 @@ else{
       class: this.audioPlay
     })
     var audioSource = $("<source/>", {
-      src: `audio/spokenAudio/${this.textType}/${this.room.house.currentRoom}_${this.target.Name}.mp3`
+      src: `audio/spokenAudio/${this.textType}/${this.scene.game.currentRoom}_${this.target.Name}.mp3`
     })
     var closeButton = $("<div/>", {
       id: "close",

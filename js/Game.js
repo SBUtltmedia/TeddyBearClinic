@@ -1,4 +1,4 @@
-class House {
+class Game {
 
     constructor() {
         this.autoplay = localStorage.getItem('autoplay') || true;
@@ -36,11 +36,11 @@ class House {
     }
     loadRoom() {
         $.get(`JSON/${this.currentRoom}.json`, (result) => {
-            this.Room = new Room(this, result)
+            this.Scene = new Scene(this, result)
             $('#screen').css({
                 opacity: 0
             });
-            $(document).attr("title", `Asthma Trigger House ${this.currentRoom.replace("%20"," ")}`);
+            $(document).attr("title", `Asthma Trigger Game ${this.currentRoom.replace("%20"," ")}`);
         }).fail(function() {
             window.location = "./#Hallway";
             location.reload();

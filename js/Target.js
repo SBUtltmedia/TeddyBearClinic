@@ -1,6 +1,6 @@
 class Target {
-    constructor(room, targetInfo) {
-        this.room = room;
+    constructor(scene, targetInfo) {
+        this.scene = scene;
         this.isAnimating = false;
         this.currentFrame = 1;
         this.currentLoop = 1;
@@ -43,16 +43,16 @@ class Target {
             if (cubbyCheck === "cubbySVG") {
 
             } else {
-                // this.room.removeTarget()
+                // this.scene.removeTarget()
                 var cubbyTarget = `#cubbySVG_${this.targetInfo.Name}`
                 $(cubbyTarget).show(2000)
                 $(cubbyTarget).off().on("click", (evt) => this.itemClicked(evt));
 
                 // $(`#${this.targetInfo.Name}`).hide("1000");
-                this.room.blur.removeHighlightCopy()
-                if (this.room.house.isTutorial && this.room.triggersLeft) {
+                this.scene.blur.removeHighlightCopy()
+                if (this.scene.game.isTutorial && this.scene.triggersLeft) {
 
-                    this.room.setupTarget(this.room.roomInfo.targets[this.room.currentTargetId])
+                    this.scene.setupTarget(this.scene.roomInfo.targets[this.scene.currentTargetId])
                 }
             }
             //  isTrigger = true;
@@ -63,11 +63,11 @@ class Target {
         if (true || !$("#thoughtBubble").length) {
 
 
-            if (!this.room.triggersLeft) {
-                this.room.showHeader = true
+            if (!this.scene.triggersLeft) {
+                this.scene.showHeader = true
             }
 
-            this.targetModalDialog = new ModalDialog(this.room, this.targetInfo, "postText", this.room.showHeader, this.targetInfo.isTrigger, this)
+            this.targetModalDialog = new ModalDialog(this.scene, this.targetInfo, "postText", this.scene.showHeader, this.targetInfo.isTrigger, this)
                 // this.targetModalDialog.displayTargetInfo()
 
 

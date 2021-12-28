@@ -1,12 +1,12 @@
 class ModalDialog {
-    constructor(room, target, textType, showHeader, isTrigger = true, callback) {
+    constructor(scene, target, textType, showHeader, isTrigger = true, callback) {
         this.callback = callback
         this.isTrigger = isTrigger;
-        this.room = room;
+        this.scene = scene;
         this.showHeader = showHeader;
         this.target = target;
         this.textType = textType;
-        this.audioPlay = this.room.house.autoplay ? 'audioOn' : 'audioOff';
+        this.audioPlay = this.scene.game.autoplay ? 'audioOn' : 'audioOff';
         this.makeDOMItems();
         console.log(target)
 
@@ -27,13 +27,17 @@ class ModalDialog {
 
     }
     closeBubble() {
-
         $("#thoughtBubble").remove()
-        this.room.removeTarget()
-        if (!this.room.triggersLeft) {
-            this.room.house.currentRoom = this.room.roomInfo.nextRoom;
-            this.room.house.isTutorial = false;
-            setTimeout(() => this.room.house.loadRoom(), 1000)
+        this.scene.removeTarget()
+        if (!this.scene.triggersLeft) {
+            this.scene.game.currentRoom = this.scene.roomInfo.nextRoom;
+            this.scene.game.isTutorial = false;
+            if(this.scene.game.currentRoom == "Certificate"){
+                window.location.assign("certificate/")
+
+            }else{
+                setTimeout(() => this.scene.game.loadRoom(), 1000)
+            }
 
 
         }
@@ -47,8 +51,8 @@ class ModalDialog {
 
 
             $("#bubbleContent").html(this.target[this.textType][1])
-            this.room.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.room.house.currentRoom}_${this.target.Name}_1.mp3`);
-            this.room.playNarration();
+            this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_1.mp3`);
+            this.scene.playNarration();
             $(".background1Border").removeClass("background1Border").addClass(this.border)
             $(".background1").removeClass("background1").addClass(this.background)
             $("#thoughtBubble").show()
@@ -74,8 +78,8 @@ class ModalDialog {
         console.log(this)
 
         $("#bubbleContent").html(this.target[this.textType][0])
-        this.room.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.room.house.currentRoom}_${this.target.Name}_0.mp3`);
-        this.room.playNarration();
+        this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3`);
+        this.scene.playNarration();
 
 
         $("#thoughtBubble").on("click", () => {
