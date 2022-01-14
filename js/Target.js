@@ -9,7 +9,8 @@ class Target {
         this.targetInfo.isTrigger = this.targetInfo.isTrigger || false;
         this.loopAmount = this.targetInfo.loopAmount || 1;
         this.targetSelector = $(`#roomSVG  #${this.targetInfo.Name}`)
-
+        this.targetSelector.addClass("target")
+        
         this.targetSelector.one("click", (evt) => {
 
 

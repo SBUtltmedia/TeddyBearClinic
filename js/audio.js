@@ -21,13 +21,20 @@ function ss_soundbits(sound) {
                 source_element.setAttribute('type', audiotypes[RegExp.$1])
 
         }
+        audio_element.volume = 0.05
+        audio_element.addEventListener('ended', (event) => {
+            console.log('Video stopped either because 1) it was over, ' +
+                'or 2) no further data is available.');
+        });
+
+
         audio_element.load()
-        audio_element.playclip = function() {
+        audio_element.playclip = function () {
             audio_element.pause()
             audio_element.currentTime = 0
             audio_element.play()
         }
-        audio_element.pauseclip = function() {
+        audio_element.pauseclip = function () {
             audio_element.pause()
         }
         return audio_element

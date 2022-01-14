@@ -98,6 +98,8 @@ $(function() {
 
                 updateDownloadURL()
 
+                window.location.assign("../credits.html")
+
                 // $("#createLabel").addClass("createPressed")
             });
 

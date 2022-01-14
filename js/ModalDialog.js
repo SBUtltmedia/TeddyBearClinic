@@ -17,7 +17,7 @@ class ModalDialog {
 
 
     makeDOMItems() {
-
+        $(".target").css({pointerEvents:"none"})
         this.popup = $("<div/>", {
             id: "thoughtBubble",
             class: "thoughtPopAnimation"
@@ -27,8 +27,10 @@ class ModalDialog {
 
     }
     closeBubble() {
+        $(".target").css({pointerEvents:"auto"})
         $("#thoughtBubble").remove()
         this.scene.removeTarget()
+        this.scene.soundEffect.pauseclip()
         if (!this.scene.triggersLeft) {
             this.scene.game.currentRoom = this.scene.roomInfo.nextRoom;
             this.scene.game.isTutorial = false;
@@ -52,6 +54,8 @@ class ModalDialog {
 
             $("#bubbleContent").html(this.target[this.textType][1])
             this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_1.mp3`);
+            
+
             this.scene.playNarration();
             $(".background1Border").removeClass("background1Border").addClass(this.border)
             $(".background1").removeClass("background1").addClass(this.background)
