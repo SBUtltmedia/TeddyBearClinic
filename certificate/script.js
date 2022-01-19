@@ -55,45 +55,13 @@ $(function() {
                     // updateDownloadURL()
 
                 })
-                /*$('#line2Input').on("keyup", function() {
 
-                $('#line2').text($('#line2Input').val())
-
-                //updateDownloadURL()
-
-            })
-*/
-                // $("#buttonCreate *").on("mouseover", function() {
-
-
-
-
-            //     document.getElementById("createLabel").classList.add("createHover");
-            //     document.getElementById("createLabel").classList.remove("createOut");
-
-
-
-            //     // $("#createLabel").addClass("createPressed")
-            // });
-
-
-            // $("#buttonCreate").on("mouseout", function() {
-
-
-
-
-            //     document.getElementById("createLabel").classList.remove("createHover");
-            //     document.getElementById("createLabel").classList.add("createOut");
-
-
-            //     // $("#createLabel").addClass("createPressed")
-            // });
 
 
 
             $("#makerHolder").on("mouseup", function() {
                 console.log("hello")
-
+                saveToServer();
                 toggleWaiting()
 
                 updateDownloadURL()
@@ -102,7 +70,11 @@ $(function() {
 
                 // $("#createLabel").addClass("createPressed")
             });
-
+            function saveToServer(){
+                let name = $("#line1Input").val()
+                let institution = $("#line2Input").val()
+                $.get( "SaveData.php", { name, institution } );
+            }
 
 
 

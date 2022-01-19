@@ -82,7 +82,7 @@ class ModalDialog {
         console.log(this)
 
         $("#bubbleContent").html(this.target[this.textType][0])
-        this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3`);
+        this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3`, ()=> {$("#thoughtBubble").click()} ); 
         this.scene.playNarration();
 
 

@@ -11,20 +11,21 @@ var source_element = document.createElement('source')
 var audio_element = soundEffect[0];
 audio_element.appendChild(source_element)
 
-function ss_soundbits(sound) {
+function ss_soundbits(sound, callback= ()=> {}) {
+
 
 
     if (audio_element.canPlayType) {
-        for (var i = 0; i < arguments.length; i++) {
-            source_element.setAttribute('src', arguments[i])
-            if (arguments[i].match(/\.(\w+)$/i))
-                source_element.setAttribute('type', audiotypes[RegExp.$1])
+        //for (var i = 0; i < arguments.length; i++) {
+            source_element.setAttribute('src', sound)
+            //if (arguments[i].match(/\.(\w+)$/i))
+                //source_element.setAttribute('type', audiotypes[RegExp.$1])
 
-        }
-        audio_element.volume = 0.05
+        //}
+        //audio_element.volume = 0.05
         audio_element.addEventListener('ended', (event) => {
-            console.log('Video stopped either because 1) it was over, ' +
-                'or 2) no further data is available.');
+            audio_element.pause()
+            callback()
         });
 
 
