@@ -1,11 +1,13 @@
 class Animate {
     constructor(animationName, frameRate, loopAmount = 1) {
-        console.log(animationName, frameRate, loopAmount)
+        
         this.animationName = animationName
         this.frameRate = frameRate
         this.currentFrame = 1
         this.currentLoop = 1
         this.loopAmount = loopAmount
+        this.timeout = 0
+        
     }
     animate(isInternal = false) {
 
@@ -30,7 +32,8 @@ class Animate {
         if (currentLayer.length >= 1) {
 
             this.currentFrame++
-                setTimeout(() => this.animate(true), 2000 / this.frameRate)
+                this.timeout = setTimeout(() => this.animate(true), 2000 / this.frameRate)
+                
         } else {
             if (this.currentLoop >= this.loopAmount) {
 
@@ -38,7 +41,7 @@ class Animate {
                 // var framesSelector = $(`[id^="${this.targetInfo.Name}"]`)
 
                 this.animateDeferred.resolve("vfdg")
-
+                clearTimeout(this.timeout)
 
                 //framesSelector.show(())
 

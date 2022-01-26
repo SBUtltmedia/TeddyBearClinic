@@ -28,6 +28,8 @@ function ss_soundbits(sound, callback= ()=> {}) {
             callback()
         });
 
+        
+
 
         audio_element.load()
         audio_element.playclip = function () {
@@ -37,6 +39,9 @@ function ss_soundbits(sound, callback= ()=> {}) {
         }
         audio_element.pauseclip = function () {
             audio_element.pause()
+        }
+        audio_element.stopclip = function () {
+            source_element.setAttribute('src', '')
         }
         return audio_element
     }

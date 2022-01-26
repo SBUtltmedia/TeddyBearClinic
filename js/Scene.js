@@ -38,7 +38,7 @@ class Scene {
                 resizeWindow();
                 if (this.roomInfo.backgroundAnimations.length != 0) {
                     for (var i of this.roomInfo.backgroundAnimations) {
-                        console.log("Name is", i.animationName, "frameRate is", i.frameRate)
+                        
                         var animate = new Animate(i.animationName, i.frameRate, i.loopAmount)
                         animate.animate().then(() => {})
                     }
@@ -49,46 +49,13 @@ class Scene {
         );
     }
 
-    makeRoomTypeException()
+    makeRoomTypeException(){
+        
 
-    {
-        console.log(this.roomName)
-        if (this.roomName.replace("%20", " ") == "Front%20Yard".replace("%20", " ")) {
-
-            setTimeout(() => this.game.Scene.targets[0].animate(false), 1000);
-
-            $.get("credits.html", (data) => {
-
-                this.roomInfo.targets[0].postText = [data, ""]
-                var md = new ModalDialog(this, this.roomInfo.targets[0], "postText", false)
-                $("#helpButton").hide();
-                $("#triggersLeft").hide()
-
-
-                // comboInfo.css({
-                //     "width": "40%",
-                //     "height":"160%"
-                //   });
-
-                $('#thoughtBubble').addClass("finalCreditsBubble")
-
-                $('#leftBubble').addClass("finalCreditsParent")
-
-
-            })
-        }
-
-        if (this.roomName == "Hallway") {
-            this.setupTarget(this.roomInfo.targets[this.currentTargetId])
-            var md = new ModalDialog(this, this.roomInfo.targets[this.currentTargetId], "preText", false)
-            md.displayTargetInfo()
-        } else {
-
-            this.setupTargets()
-        }
-
-
+        this.setupTargets()
     }
+
+
     // img src = "img/resources/soundon_white.svg"
     loadRoomImage(roomData) {
         var deferred = jQuery.Deferred();
@@ -149,7 +116,7 @@ class Scene {
 
     }
     setupTarget(target, isPost = true) {
-
+        console.log("setupTarget", target)
         this.targets.push(new Target(this, target, true));
         if (this.game.isTutorial) {
             this.blur.highlightComponent(`#${target.Name}`);

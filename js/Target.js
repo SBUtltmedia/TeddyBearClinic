@@ -13,7 +13,7 @@ class Target {
         
         this.targetSelector.on("click", (evt) => {
 
-            console.log("Clicked.")
+            
             this.itemClicked(evt)
 
         })
@@ -58,7 +58,7 @@ class Target {
             }
             //  isTrigger = true;
         }else{
-            console.log("Not a trigger.")
+            
         }
         // var item = roomData.targets[lookup[clickedItem]];
 
@@ -72,6 +72,7 @@ class Target {
             if(this.targetInfo.isTrigger){
                 this.targetModalDialog = new ModalDialog(this.scene, this.targetInfo, "postText", this.scene.showHeader, this.targetInfo.isTrigger, this)
             }else{
+                
                 var animate = new Animate(this.targetInfo.Name, this.targetInfo.frameRate)
         animate.animate().then(() => {})
             }

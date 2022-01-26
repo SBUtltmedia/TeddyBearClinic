@@ -24,7 +24,7 @@ function resizeWindow() {
     // Get window width and height
     var w = $(window).width();
     var h = $(window).height();
-    console.log(w, h)
+    
         // If the aspect ratio is greater than or equal to 4:3, fix height and set width based on height
     if ((w / h) >= 4 / 3) {
         stageHeight = h;

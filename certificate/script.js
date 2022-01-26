@@ -60,7 +60,7 @@ $(function() {
 
 
             $("#makerHolder").on("mouseup", function() {
-                console.log("hello")
+                
                 saveToServer();
                 toggleWaiting()
 
@@ -131,7 +131,7 @@ function setLineText(i) {
 
 
     var firstline = document.getElementById('line' + i).innerHTML
-    console.log($('#line1').html())
+    
     $('#line' + i + 'Input').val(firstline)
 
 
@@ -216,12 +216,12 @@ function download() {
                 secondline: $('#line2').text()
             },
             function(data) {
-                  console.log("hello first")
+                  
                // $('#linkHolder').html("<a href='https://credly.com/recipients/" + JSON.parse(data).data + "'>click</a>");
                 //$('#linkHolder').html(data);
             $('#congrats').on("click" , 
                              function(){
-                console.log("hello")
+                
                 window.open("https://credly.com/recipients/" + JSON.parse(data).data,'_blank'); 
                 
                 

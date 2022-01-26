@@ -26,7 +26,7 @@ removeHighlightCopy() {
 }
 
 highlightComponent(id) {
-console.log(id)
+
  var origPart = $(id);
 
  var clonePart = $(id).clone();

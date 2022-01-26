@@ -8,7 +8,7 @@ class ModalDialog {
         this.textType = textType;
         this.audioPlay = this.scene.game.autoplay ? 'audioOn' : 'audioOff';
         this.makeDOMItems();
-        console.log(target)
+        
 
     }
 
@@ -17,11 +17,14 @@ class ModalDialog {
 
 
     makeDOMItems() {
+        console.log("makeDOMItems")
         $(".target").css({pointerEvents:"none"})
         this.popup = $("<div/>", {
             id: "thoughtBubble",
             class: "thoughtPopAnimation"
         }).load("popup.html", () => this.populateBubble())
+
+        
 
 
 
@@ -30,7 +33,7 @@ class ModalDialog {
         $(".target").css({pointerEvents:"auto"})
         $("#thoughtBubble").remove()
         this.scene.removeTarget()
-        this.scene.soundEffect.pauseclip()
+        this.scene.soundEffect.stopclip()
         if (!this.scene.triggersLeft) {
             this.scene.game.currentRoom = this.scene.roomInfo.nextRoom;
             this.scene.game.isTutorial = false;
@@ -45,10 +48,12 @@ class ModalDialog {
         }
     }
     changeBubble() {
+        
         $("#thoughtBubble").hide()
         this.callback.playSound(this.callback.targetInfo.audioFile)
         var animate = new Animate(this.callback.targetInfo.Name, this.callback.targetInfo.frameRate)
         animate.animate().then(() => {
+            
             $("#Heading").html(this.heading)
 
 
@@ -63,12 +68,12 @@ class ModalDialog {
         })
     }
     populateBubble() {
-
+        
 
         $("#roomSVG").append(this.popup)
-        console.log(this.target.isGood)
+        
         if (this.target.isGood) {
-            console.log("Bananas")
+            
             this.background = "backgroundGood"
             this.border = "backgroundGoodBorder"
             this.heading = "Good job!"
@@ -79,14 +84,15 @@ class ModalDialog {
             this.heading = "This is not safe!"
         }
         $("#Heading").html(this.heading)
-        console.log(this)
+        
 
         $("#bubbleContent").html(this.target[this.textType][0])
         this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3`, ()=> {$("#thoughtBubble").click()} ); 
         this.scene.playNarration();
 
-
-        $("#thoughtBubble").on("click", () => {
+        console.log("before click bubble")
+        document.getElementById("thoughtBubble").addEventListener("click", () => {
+            console.log("click bubble")
             if ($(".background1").length) {
                 this.heading = "What do we do?"
                 this.changeBubble()
@@ -95,6 +101,9 @@ class ModalDialog {
             }
 
 
-        })
+        });
+        
+
+
     }
 }
