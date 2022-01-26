@@ -87,11 +87,12 @@ class ModalDialog {
         
 
         $("#bubbleContent").html(this.target[this.textType][0])
-        this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3`, ()=> {$("#thoughtBubble").click()} ); 
+        this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3` ); 
         this.scene.playNarration();
 
         console.log("before click bubble")
-        document.getElementById("thoughtBubble").addEventListener("click", () => {
+       $("#thoughtBubble").on("click", () => {
+        this.scene.soundEffect.removeEventListener("ended",()=>{},false)
             console.log("click bubble")
             if ($(".background1").length) {
                 this.heading = "What do we do?"

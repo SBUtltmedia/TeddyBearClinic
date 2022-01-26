@@ -26,7 +26,7 @@ function ss_soundbits(sound, callback= ()=> {}) {
         audio_element.addEventListener('ended', (event) => {
             audio_element.pause()
             callback()
-        });
+        },false);
 
         
 
