@@ -21,15 +21,10 @@ class Target {
     }
 
 
-    playSound(sound = "MirrorDing.mp3") {
-        var soundEffect = ss_soundbits("audio/" + sound);
-        soundEffect.playclip();
-    }
-
 
 
     itemClicked(evt) {
-        this.playSound()
+        playSound("MirrorDing.mp3","soundEffect").playclip()
         setTimeout(() => this.modalAndCubbyShow(evt), 500)
 
     }

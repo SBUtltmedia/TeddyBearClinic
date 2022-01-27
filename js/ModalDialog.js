@@ -33,7 +33,7 @@ class ModalDialog {
         $(".target").css({pointerEvents:"auto"})
         $("#thoughtBubble").remove()
         this.scene.removeTarget()
-        this.scene.soundEffect.stopclip()
+ 
         if (!this.scene.triggersLeft) {
             this.scene.game.currentRoom = this.scene.roomInfo.nextRoom;
             this.scene.game.isTutorial = false;
@@ -50,7 +50,7 @@ class ModalDialog {
     changeBubble() {
         
         $("#thoughtBubble").hide()
-        this.callback.playSound(this.callback.targetInfo.audioFile)
+        playSound(this.callback.targetInfo.audioFile,"soundEffect").playclip();
         var animate = new Animate(this.callback.targetInfo.Name, this.callback.targetInfo.frameRate)
         animate.animate().then(() => {
             
@@ -58,7 +58,9 @@ class ModalDialog {
 
 
             $("#bubbleContent").html(this.target[this.textType][1])
-            this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_1.mp3`);
+            let callback=()=>$('#thoughtBubble').click();
+            let sound= `bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_1.mp3`
+            this.scene.Narration = playSound(sound,"bubbleSpeech",callback);
             
 
             this.scene.playNarration();
@@ -87,13 +89,17 @@ class ModalDialog {
         
 
         $("#bubbleContent").html(this.target[this.textType][0])
-        this.scene.soundEffect = ss_soundbits(`audio/bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3` ); 
+        let sound= `bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3`
+        let callback=()=>{$('#thoughtBubble').trigger("click")};
+        this.scene.Narration = playSound(sound,"bubbleSpeech",callback);
+      
         this.scene.playNarration();
-
-        console.log("before click bubble")
-       $("#thoughtBubble").on("click", () => {
-        this.scene.soundEffect.removeEventListener("ended",()=>{},false)
-            console.log("click bubble")
+        console.log(    $("thoughtBubble"))
+        
+        $("#thoughtBubble").on("click", () => {
+     
+            this.scene.Narration.stopclip();
+         //   this.scene.soundEffect.stopclip()
             if ($(".background1").length) {
                 this.heading = "What do we do?"
                 this.changeBubble()

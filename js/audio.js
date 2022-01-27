@@ -5,28 +5,26 @@ var audiotypes = {
     "wav": "audio/wav"
 }
 
-var soundEffect = $('<audio/>', { "id": "soundEffect" })
-var source_element = document.createElement('source')
-
-var audio_element = soundEffect[0];
-audio_element.appendChild(source_element)
-
-function ss_soundbits(sound, callback= ()=> {}) {
 
 
+function playSound(sound,type, callback= ()=> {}) {
+    console.log(sound)
+let cb=callback;
+let audio_element=$(`#${type}`)[0];
+let source_element=$(`#${type} source`)[0];
 
     if (audio_element.canPlayType) {
         //for (var i = 0; i < arguments.length; i++) {
-            source_element.setAttribute('src', sound)
+            source_element.setAttribute('src', "audio/"+sound)
             //if (arguments[i].match(/\.(\w+)$/i))
                 //source_element.setAttribute('type', audiotypes[RegExp.$1])
 
         //}
         //audio_element.volume = 0.05
         audio_element.addEventListener('ended', (event) => {
-            audio_element.pause()
-            callback()
-        },false);
+        console.log(cb)
+            cb()
+        });
 
         
 
@@ -41,6 +39,7 @@ function ss_soundbits(sound, callback= ()=> {}) {
             audio_element.pause()
         }
         audio_element.stopclip = function () {
+            cb=()=>{};
             source_element.setAttribute('src', '')
         }
         return audio_element

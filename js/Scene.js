@@ -95,15 +95,15 @@ class Scene {
 
     playNarration() {
 
-        if (this.soundEffect) {
+        if (this.Narration) {
 
 
             if (this.game.autoplay) {
 
-                this.soundEffect.playclip()
+                this.Narration.playclip()
             } else {
 
-                this.soundEffect.pauseclip()
+                this.Narration.pauseclip()
             }
         }
     }
