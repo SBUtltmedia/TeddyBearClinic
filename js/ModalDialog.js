@@ -79,7 +79,7 @@ class ModalDialog {
             this.background = "backgroundGood"
             this.border = "backgroundGoodBorder"
             this.heading = "Good job!"
-            this.changeBubble()
+         //   this.changeBubble()
         } else {
             this.background = "background2"
             this.border = "background2Border"
