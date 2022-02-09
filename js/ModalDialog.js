@@ -1,11 +1,10 @@
 class ModalDialog {
-    constructor(scene, target, textType, showHeader, isTrigger = true, callback) {
-        this.callback = callback
-        this.isTrigger = isTrigger;
+    constructor(scene, targetInfo) {
+       
         this.scene = scene;
-        this.showHeader = showHeader;
-        this.target = target;
-        this.textType = textType;
+ 
+        this.targetInfo = targetInfo;
+   
         this.audioPlay = this.scene.game.autoplay ? 'audioOn' : 'audioOff';
         this.makeDOMItems();
         
@@ -50,16 +49,16 @@ class ModalDialog {
     changeBubble() {
         
         $("#thoughtBubble").hide()
-        playSound(this.callback.targetInfo.audioFile,"soundEffect").playclip();
-        var animate = new Animate(this.callback.targetInfo.Name, this.callback.targetInfo.frameRate)
+        playSound(this.targetInfo.audioFile,"soundEffect").playclip();
+        var animate = new Animate(this.targetInfo.Name, this.targetInfo.frameRate)
         animate.animate().then(() => {
             
             $("#Heading").html(this.heading)
 
 
-            $("#bubbleContent").html(this.target[this.textType][1])
+            $("#bubbleContent").html(this.targetInfo['postText'][1])
             let callback=()=>$('#thoughtBubble').click();
-            let sound= `bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_1.mp3`
+            let sound= `bubbleSpeech/${this.scene.game.currentRoom}_${this.targetInfo.Name}_1.mp3`
             this.scene.Narration = playSound(sound,"bubbleSpeech",callback);
             
 
@@ -71,15 +70,19 @@ class ModalDialog {
     }
     populateBubble() {
         
-
+     
         $("#roomSVG").append(this.popup)
-        
-        if (this.target.isGood) {
+
+      
+        $(".target").css({pointerEvents:"none"})
+        if (this.targetInfo.isGood) {
             
             this.background = "backgroundGood"
             this.border = "backgroundGoodBorder"
             this.heading = "Good job!"
-         //   this.changeBubble()
+            $(".background1Border").removeClass("background1Border").addClass(this.border)
+            $(".background1").removeClass("background1").addClass(this.background)
+            this.changeBubble()
         } else {
             this.background = "background2"
             this.border = "background2Border"
@@ -88,8 +91,8 @@ class ModalDialog {
         $("#Heading").html(this.heading)
         
 
-        $("#bubbleContent").html(this.target[this.textType][0])
-        let sound= `bubbleSpeech/${this.scene.game.currentRoom}_${this.target.Name}_0.mp3`
+        $("#bubbleContent").html(this.targetInfo['postText'][0])
+        let sound= `bubbleSpeech/${this.scene.game.currentRoom}_${this.targetInfo.Name}_0.mp3`
         let callback=()=>{$('#thoughtBubble').trigger("click")};
         this.scene.Narration = playSound(sound,"bubbleSpeech",callback);
       
