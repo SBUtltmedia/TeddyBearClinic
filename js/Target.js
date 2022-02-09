@@ -1,5 +1,6 @@
 class Target {
     constructor(scene, targetInfo) {
+        this.hasAnimated=false;
         this.scene = scene;
         this.isAnimating = false;
         this.currentFrame = 1;
