@@ -24,7 +24,7 @@ class Scene {
 
     setupRoom() {
         location.hash = `#${this.roomName}`;
-        $("#screen").children().remove();
+        $("#screen").children().not("#splash").remove();
 
         this.loadRoomImage(this.roomInfo).then(
             () => {

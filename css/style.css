@@ -13,6 +13,10 @@ body {
     width: 100%;
 }
 
+#splash{
+    display: none;
+}
+
 #splashBubble {
     position: absolute;
     width: 52%;
@@ -56,6 +60,7 @@ body {
     left: 5%;
     top: 5%;
     height: 40%;
+    /* display: none; */
 }
 
 #helpButton {

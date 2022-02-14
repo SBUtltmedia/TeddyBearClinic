@@ -9,13 +9,13 @@
             "Name": "Babybear",
             "bannerText": "This carseat should face the rear.",
             "postText": [
-                "Some car seats are designed to face the back of the car.",
-                "Now Babybear is safe because the car seat is being used correctly."
+                "Oh my! Baby Bear is too young to ride facing forward in their car seat!",
+                "It’s safest for young children to ride backwards at least until they turn 2 years old."
             ],
             "loopAmount": 1,
             "frameRate": 10,
             "isTrigger": true,
-            "audioFile": "MirrorDing.mp3",
+            "audioFile": "Seat.wav",
             "thumbScale": "translate(300,275) scale(2.45)",
             "hint": "I'm soft but shed all over",
             "hintXValue": 15,
@@ -48,7 +48,7 @@
             "bannerText": "Bubbles can distract the driver who needs to concentrate.",
             "postText": [
                 "Bubble Bear is having fun with their bubbles, but they can distract the driver.",
-                "When we’re in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use their bubbles until he’s outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
+                "When we are in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use their bubbles until they are outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
             ],
             "loopAmount": 1,
             "frameRate": 7,

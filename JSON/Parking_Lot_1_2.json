@@ -9,8 +9,8 @@
             "Name": "Soccerbear",
             "bannerText": "The booster seat is not secured.",
             "postText": [
-                "Good find! “Soccer Bear” left his ball on the floor.  Sometimes objects can move around in the car and be dangerous. </li></ul>",
-                "“Soccer Bear” put his ball away in his backpack so it won’t roll or fly around in the car. </li></ul>"
+                "Good find! Soccer Bear left his ball on the floor.  Sometimes objects can move around in the car and be dangerous. </li></ul>",
+                "Soccer Bear put his ball away in his backpack so it won’t roll around in the car. </li></ul>"
             ],
             "loopAmount": 1,
             "frameRate": 30,

@@ -9,8 +9,8 @@
         "Name": "Businessbear",
         "bannerText": "The booster seat is not secured.",
         "postText": [
-            "Business Bear is using their cell phone when driving.",
-            "It’s important to remind drivers that it is not safe for anyone to use their cell phone when they are driving a car.  It is safest to wait to use a phone until we safely get to where we are going."
+            "Uh oh!  Business Bear is using their cell phone when driving.",
+            "It is important to remind drivers that it is not safe for them to use their cell phone when driving.  It is safest to wait until the car stops."
         ],
         "loopAmount": 1,
         "frameRate": 5,
