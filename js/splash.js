@@ -1,16 +1,14 @@
 let sound;
 $(()=>{
-
+    if(location.hash){
+        closeSplash();
+        closeIntro();
+    }
     $("#roomSVG").css({display: "none"});
-    // console.log("splash");
+
     $("#first_splash").on("click", closeSplash);
 
-    $("#KristiIntro").on("click", () => {
-        console.log("intro click");
-        $("#KristiIntro").css({display: "none"});
-        var game=new Game();
-        sound.stopclip();
-    })
+    $("#KristiIntro").on("click", closeIntro);
 })
 
 function closeSplash(){
@@ -22,3 +20,9 @@ function closeSplash(){
     sound.playclip();
 }
 
+function closeIntro(){
+    console.log("intro click");
+    $("#KristiIntro").css({display: "none"});
+    var game=new Game();
+    sound.stopclip();
+}

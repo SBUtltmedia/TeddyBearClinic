@@ -1,11 +1,16 @@
 #bubbleContent,
 #splashBubble {
     border-width: .5rem;
-    padding: 4rem;
+    padding: 3.5rem 4rem 4rem 4rem;
     margin-right: 30%;
     font-family: 'Baloo 2';
     font-size: 1.5rem;
     position: absolute;
+}
+.title_bubble{
+    padding: 2rem 4rem 4rem 4rem!important;
+    margin-bottom: 5%!important;
+    height: 33%!important;
 }
 
 #bubbleContent {
