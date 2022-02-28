@@ -8,7 +8,9 @@ body {
     background-size: 50%;
     background-color: #CBE5F5;
 }
-
+#KristiIntro{
+    display: none;   
+}
 .splash {
     width: 100%;
 }
@@ -60,7 +62,7 @@ body {
     left: 5%;
     top: 5%;
     height: 40%;
-    /* display: none; */
+  
 }
 
 #helpButton {

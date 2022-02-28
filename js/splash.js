@@ -1,15 +1,24 @@
+let sound;
 $(()=>{
-    let img = $("<img/>", {src:"img/Title_Screen.svg", id: "first_splash", css: {position: "absolute", left: "0", top: "0"}});
-    console.log("splash");
-    $("#screen").append(img.on("click", closeSplash));
 
-    $("#splash").on("click", () => {
-        $("#splash").css({display: "none"});
-        $("#roomSVG").css({display: "visible"});
+    $("#roomSVG").css({display: "none"});
+    // console.log("splash");
+    $("#first_splash").on("click", closeSplash);
+
+    $("#KristiIntro").on("click", () => {
+        console.log("intro click");
+        $("#KristiIntro").css({display: "none"});
+        var game=new Game();
+        sound.stopclip();
     })
 })
 
 function closeSplash(){
+    console.log("game click");
+    $("#KristiIntro").css({display: "block"});
+
     $("#first_splash").css({display: "none"});
+    sound = playSound("Welcome_Page.mp3", "bubbleSpeech", () => {$("#KristiIntro").trigger("click")});
+    sound.playclip();
 }
 
