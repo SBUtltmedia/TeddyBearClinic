@@ -40,7 +40,7 @@ class Game {
             $('#screen').css({
                 opacity: 0
             });
-            $(document).attr("title", `Asthma Trigger Game ${this.currentRoom.replace("%20"," ")}`);
+            $(document).attr("title", `Road Safety Game ${this.currentRoom.replace("%20"," ")}`);
         }).fail(function() {
             window.location = "./#Hallway";
             location.reload();
