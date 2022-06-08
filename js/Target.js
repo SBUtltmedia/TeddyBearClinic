@@ -1,6 +1,6 @@
 class Target {
     constructor(scene, targetInfo) {
-        this.hasAnimated=false;
+        this.hasAnimated = false;
         this.scene = scene;
         this.isAnimating = false;
         this.currentFrame = 1;
@@ -9,7 +9,7 @@ class Target {
         this.targetInfo.isTrigger = this.targetInfo.isTrigger || false;
         this.loopAmount = this.targetInfo.loopAmount || 1;
         this.targetSelector = $(`#roomSVG  #${this.targetInfo.Name}`)
-        this.targetSelector.addClass("target") 
+        this.targetSelector.addClass("target")
         this.targetSelector.on("click", (evt) => {
             this.itemClicked(evt)
         })
@@ -17,10 +17,10 @@ class Target {
     }
 
     itemClicked(evt) {
-        if(this.targetInfo.isTrigger){
-        $(".target").css({pointerEvents:"none"})
+        if (this.targetInfo.isTrigger) {
+            $(".target").css({ pointerEvents: "none" })
         }
-        playSound("MirrorDing.mp3","soundEffect").playclip()
+        playSound("MirrorDing.mp3", "soundEffect").playclip()
         setTimeout(() => this.modalAndCubbyShow(evt), 500)
 
     }
@@ -48,8 +48,8 @@ class Target {
                 }
             }
             //  isTrigger = true;
-        }else{
-            
+        } else {
+
         }
 
         var itemName = this.targetInfo.Name
@@ -59,22 +59,25 @@ class Target {
             if (!this.scene.triggersLeft) {
                 this.scene.showHeader = true
             }
-            if(this.targetInfo.isTrigger){
-                this.targetModalDialog = new ModalDialog(this.scene, this.targetInfo,0)
-            }else{
-                
+            if (this.targetInfo.isTrigger) {
+                this.targetModalDialog = new ModalDialog(this.scene, this.targetInfo, 0)
+            } else {
+
                 var animate = new Animate(this.targetInfo.Name, this.targetInfo.frameRate)
-        animate.animate().then(() => {})
+                animate.animate().then(() => { })
             }
 
-            if(this.targetInfo.isTrigger) {
-                this.targetSelector.off()
-            }
         }
 
 
+        if (this.targetInfo.isTrigger) {
+            this.targetSelector.off()
+        }
     }
 
 
 
 }
+
+
+

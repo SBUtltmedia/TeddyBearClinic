@@ -93,6 +93,15 @@ class ModalDialog {
                         this.closeBubble()
                     }
                 })
+                
+                if (this.targetInfo.otherAnimations) {
+                    let animation_list = [];
+                    for (let animation_index in this.targetInfo.otherAnimations) {
+                        animation_list[animation_index] = new Animate(this.targetInfo.otherAnimations[animation_index].Name, this.targetInfo.otherAnimations[animation_index].frameRate)
+                        animation_list[animation_index].animate().then(() => { })
+                    }
+
+                }
             }
             else {
                 this.closeBubble()

@@ -12,7 +12,8 @@ class Animate {
     animate(isInternal = false) {
 
 
-        var framesSelector = $(`[id^="${this.animationName}-"]`)
+        var framesSelector = $(`[id=${this.animationName}]>[id^="${this.animationName}-"]`)
+        framesSelector.hide();
 
         if (framesSelector.length == 0) {
 
