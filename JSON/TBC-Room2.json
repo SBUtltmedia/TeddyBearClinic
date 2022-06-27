@@ -1,0 +1,45 @@
+{
+    "roomImage": "TBC-Room2.svg",
+    "nextRoom": "Parking_Lot_1_2",
+    "completedText": "",
+    "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
+        { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
+    ],
+    "targets": [{
+            "Name": "Racerbear",
+            "bannerText": "Helmet not buckled",
+            "postText": [
+                "You found it! Racerbear did not buckle their helmet before they started riding. </li></ul>",
+                "It is important to buckle our helmets, just like we need to buckle our seatbelts in the car. </li></ul>"
+            ],
+            "loopAmount": 1,
+            "frameRate": 3,
+            "isTrigger": true,
+            "audioFile": "soccer.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },{
+            "Name": "Skaterbear",
+            "bannerText": "Safety pads",
+            "postText": [
+                "Good find! Skaterbear is wearing safety pads. </li></ul>",
+                "When learning how to ride a bike or skate for the first time, safety pads are a great way to protect yourself in case something goes wrong. </li></ul>"
+            ],
+            "loopAmount": 1,
+            "frameRate": 6,
+            "isGood": true,
+            "isTrigger": true,
+            "audioFile": "soccer.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        }
+    ]
+}

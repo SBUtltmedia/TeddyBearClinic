@@ -1,16 +1,16 @@
 {
     "roomImage": "TBC-Room1.svg",
-    "nextRoom": "Parking_Lot_1_2",
+    "nextRoom": "TBC-Room2",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
     ],
     "targets": [{
             "Name": "Moonbear",
-            "bannerText": "The booster seat is not secured.",
+            "bannerText": "No helmet",
             "postText": [
-                "Good find! Soccer Bear left his ball on the floor.  Sometimes objects can move around in the car and be dangerous. </li></ul>",
-                "Soccer Bear put his ball away in his backpack so it won’t roll around in the car. </li></ul>"
+                "Uh Oh. Moonbear is not wearing a helmet.  </li></ul>",
+                "Paintbear reminds Moonbear that everyone should wear a helmet when they ride a bike. Can you think of other times when we should wear a helmet? </li></ul>"
             ],
             "loopAmount": 1,
             "frameRate": 3,
