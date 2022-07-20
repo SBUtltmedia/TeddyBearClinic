@@ -1,6 +1,6 @@
 {
     "roomImage": "TBC-Room2.svg",
-    "nextRoom": "Parking_Lot_1_2",
+    "nextRoom": "TBC-Room3",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }

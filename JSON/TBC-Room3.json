@@ -1,0 +1,62 @@
+{
+    "roomImage": "TBC-Room3.svg",
+    "nextRoom": "Parking_Lot_1_2",
+    "completedText": "",
+    "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
+        { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
+    ],
+    "targets": [{
+            "Name": "Sunnybear",
+            "bannerText": "Helmet too high",
+            "postText": [
+                "Yikes! Sunnybear is not wearing their helmet the correct way. It’s too far back.  If they fall off their bike they might hurt a very  important part of their brain. Let’s fix it. </li></ul>",
+                "That’s better! It is important to wear our helmet the correct way every time we ride our bikes.  Let’s review the steps. <br></br> 1. Make sure the helmet is the right size for you. <br></br> 2. The front of the helmet should sit about two fingers width above your eyebrows. <br></br> 3. The straps should make a “V” shape under your ears. <br></br> 4. The chin strap should be snug. <br></br> 5. Before you ride, shake your head and make sure the helmet does not wiggle. </li></ul>"
+            ],
+            "loopAmount": 1,
+            "frameRate": 3,
+            "isTrigger": true,
+            "audioFile": "soccer.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },{
+            "Name": "Musicbear",
+            "bannerText": "Helmet on bike",
+            "postText": [
+                "Uh no! Musicbear is hanging their helmet from their bike handles instead of wearing it on their head. </li></ul>",
+                "Remember, our seat belts and helmets only work if we wear them and buckle them correctly! </li></ul>"
+            ],
+            "loopAmount": 1,
+            "frameRate": 3,
+            "isTrigger": true,
+            "audioFile": "soccer.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },{
+            "Name": "Flowerbear",
+            "bannerText": "Wearing helmet correctly",
+            "postText": [
+                "Yes! Flowerbear is wearing their helmet the right way. </li></ul>",
+                "We can remind friends and family to wear their helmet the right way just like Flowerbear. </li></ul>"
+            ],
+            "loopAmount": 1,
+            "frameRate": 6,
+            "isGood": true,
+            "isTrigger": true,
+            "audioFile": "soccer.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        }
+    ]
+}
