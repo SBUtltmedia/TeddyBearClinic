@@ -79,12 +79,15 @@ class ModalDialog {
         console.log($("thoughtBubble"))
 
         $("#thoughtBubble").on("click", () => {
+            console.log("Start animation");
             $('#thoughtBubble').remove();
             this.scene.Narration.stopclip();
             if (!this.targetInfo.hasAnimated) {
+                console.log("!hasAnimated");
                 playSound(this.targetInfo.audioFile, "soundEffect").playclip();
                 var animate = new Animate(this.targetInfo.Name, this.targetInfo.frameRate)
                 animate.animate().then(() => {
+                    console.log("animate().then");
                     this.targetInfo.hasAnimated = true;
                     if (this.targetInfo.postText.length - 1 > this.dialogIndex) {
                         new ModalDialog(this.scene, this.targetInfo, this.dialogIndex + 1)

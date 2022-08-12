@@ -15,20 +15,20 @@ class Animate {
         var framesSelector = $(`[id=${this.animationName}]>[id^="${this.animationName}-"]`)
         framesSelector.hide();
 
-        if (framesSelector.length == 0) {
 
+        if (framesSelector.length == 0) {
             this.animateDeferred = $.Deferred();
             this.animateDeferred.resolve("vfdg");
             return this.animateDeferred.promise();
-
-
         }
+
 
         framesSelector.hide();
 
         var currentLayer = $(`#${this.animationName}-${this.currentFrame}`)
 
         $(`#${this.animationName}-${this.currentFrame}`).show();
+
 
         if (currentLayer.length >= 1) {
 
@@ -41,8 +41,8 @@ class Animate {
                 $(`#${this.animationName}-${this.currentFrame - 1}`).show();
                 // var framesSelector = $(`[id^="${this.targetInfo.Name}"]`)
 
-                this.animateDeferred.resolve("vfdg")
-                clearTimeout(this.timeout)
+                this.animateDeferred.resolve("vfdg");
+                clearTimeout(this.timeout);
 
                 //framesSelector.show(())
 
