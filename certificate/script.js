@@ -1,4 +1,4 @@
-var svgImage = "Certificate2.svg"
+var svgImage = "Certificate.svg"
 var firstFocus1 = true;
 var firstFocus2 = true;
 var myCanvas;
