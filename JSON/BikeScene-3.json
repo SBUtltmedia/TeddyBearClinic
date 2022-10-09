@@ -1,28 +1,28 @@
 {
-    "roomImage": "TBC-Room1.svg",
-    "nextRoom": "TBC-Room2",
+    "roomImage": "BikeScene-3.svg",
+    "nextRoom": "BikeScene-4",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
     ],
     "targets": [{
-            "Name": "Moonbear",
-            "bannerText": "No helmet",
+            "Name": "Snowbear",
+            "bannerText": "Helmet too high",
             "postText": [
-                "Uh Oh. Moonbear is not wearing a helmet.  </li></ul>",
-                "Paintbear reminds Moonbear that everyone should wear a helmet when they ride a bike. Can you think of other times when we should wear a helmet? </li></ul>"
+                "Good find! Snowbear is not wearing their helmet.  </li></ul>",
+                "It is important for grownups to wear their helmets to protect their brains too. You can help remind everyone to wear their helmet to protect their brain, just like you and Superbear reminded Snowbear! </li></ul>"
             ],
             "loopAmount": 1,
             "frameRate": 3,
             "isTrigger": true,
-            "audioFile": "soccer.mp3",
+            "audioFile": "HelmetBuckling.mp3",
             "thumbScale": "translate(300,275) scale(2.45)",
             "hint": "I'm soft but shed all over",
             "hintXValue": 15,
             "Text": [
                 "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
             ],
-            "otherAnimations": [{"Name": "Paintbear", "frameRate": 2}]
+            "otherAnimations": [{"Name": "Superbear", "frameRate": 3}]
         }
     ]
 }

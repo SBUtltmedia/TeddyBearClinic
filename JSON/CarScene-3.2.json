@@ -1,65 +1,73 @@
 {
-    "roomImage": "TBC-Room4.svg",
-    "nextRoom": "Parking_Lot_1_2",
+    "roomImage": "CarScene-3.2.svg",
+    "nextRoom": "CarScene-4.1",
     "completedText": "",
-    "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
+    "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 10, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
     ],
     "targets": [{
-            "Name": "Sunnybear",
-            "bannerText": "Helmet too high",
+            "Name": "Babybear",
+            "bannerText": "This carseat should face the rear.",
             "postText": [
-                "Yikes! Sunnybear is not wearing their helmet the correct way. It’s too far back.  If they fall off their bike they might hurt a very  important part of their brain. Let’s fix it. </li></ul>",
-                "That’s better! It is important to wear our helmet the correct way every time we ride our bikes.  Let’s review the steps. <br></br> 1. Make sure the helmet is the right size for you. <br></br> 2. The front of the helmet should sit about two fingers width above your eyebrows. <br></br> 3. The straps should make a “V” shape under your ears. <br></br> 4. The chin strap should be snug. <br></br> 5. Before you ride, shake your head and make sure the helmet does not wiggle. </li></ul>"
+                "Oh my! Babybear is too young to ride facing forward in their car seat!",
+                "It’s safest for young children to ride backwards at least until they turn 2 years old."
             ],
             "loopAmount": 1,
-            "frameRate": 3,
+            "frameRate": 10,
             "isTrigger": true,
-            "audioFile": "soccer.mp3",
+            "audioFile": "Seat.wav",
             "thumbScale": "translate(300,275) scale(2.45)",
             "hint": "I'm soft but shed all over",
             "hintXValue": 15,
             "Text": [
                 "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
-            ],
-            "otherAnimations": [{"Name": "SpotlightC", "frameRate": 3}]
-        },{
-            "Name": "Musicbear",
-            "bannerText": "Helmet on bike",
-            "postText": [
-                "Uh no! Musicbear is hanging their helmet from their bike handles instead of wearing it on their head. </li></ul>",
-                "Remember, our seat belts and helmets only work if we wear them and buckle them correctly! </li></ul>"
-            ],
-            "loopAmount": 1,
-            "frameRate": 3,
-            "isTrigger": true,
-            "audioFile": "soccer.mp3",
-            "thumbScale": "translate(300,275) scale(2.45)",
-            "hint": "I'm soft but shed all over",
-            "hintXValue": 15,
-            "Text": [
-                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
-            ],
-            "otherAnimations": [{"Name": "SpotlightA", "frameRate": 3}]
-        },{
+            ]
+        },
+
+        {
             "Name": "Flowerbear",
-            "bannerText": "Wearing helmet correctly",
+            "bannerText": "Both of Flowerbear's knees have to be over the seat to be safe.",
             "postText": [
-                "Yes! Flowerbear is wearing their helmet the right way. </li></ul>",
-                "We can remind friends and family to wear their helmet the right way just like Flowerbear. </li></ul>"
+                "Flowerbear is not sitting with their knees bent over the edge of the seat.  This is not a safe way to ride in the car.",
+                "To ride safely, we should be sitting up tall, with our knees bent over the edge of the seat."
             ],
             "loopAmount": 1,
-            "frameRate": 3,
-            "isGood": true,
-            "isTrigger": true, 
-            "audioFile": "soccer.mp3",
+            "frameRate": 10,
+            "isTrigger": true,
+            "audioFile": "MirrorDing.mp3",
             "thumbScale": "translate(300,275) scale(2.45)",
             "hint": "I'm soft but shed all over",
             "hintXValue": 15,
             "Text": [
                 "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },
+
+        {
+            "Name": "Bubblebear",
+            "bannerText": "Bubbles can distract the driver who needs to concentrate.",
+            "postText": [
+                "Bubble Bear is having fun with their bubbles, but they can distract the driver.",
+                "When we are in the car, it’s important for us to be good passengers and not distract the driver.  Bubble Bear will wait to use their bubbles until they are outside of the car.  Can you think of other ways we can make sure we don’t distract the driver?"
             ],
-            "otherAnimations": [{"Name": "SpotlightB", "frameRate": 3}]
+            "loopAmount": 1,
+            "frameRate": 7,
+            "isTrigger": true,
+            "audioFile": "MirrorDing.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ]
+        },{
+            "Name": "Headlights",
+            "loopAmount": 1,
+            "frameRate": 5,
+            "isTrigger": false,
+            "audioFile": "Steer.wav",
+            "thumbScale": "translate(300,275) scale(2.45)"
         }
+
     ]
 }

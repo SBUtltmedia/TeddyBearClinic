@@ -1,6 +1,6 @@
 {
-    "roomImage": "Parking_Lot_2_1.svg",
-    "nextRoom": "Parking_Lot_2_2",
+    "roomImage": "CarScene-2.1.svg",
+    "nextRoom": "CarScene-2.2",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
@@ -9,7 +9,7 @@
         "Name": "Businessbear",
         "bannerText": "The booster seat is not secured.",
         "postText": [
-            "Uh oh!  Business Bear is using their cell phone when driving.",
+            "Uh oh!  Businessbear is using their cell phone when driving.",
             "It is important to remind drivers that it is not safe for them to use their cell phone when driving.  It is safest to wait until the car stops."
         ],
         "loopAmount": 1,

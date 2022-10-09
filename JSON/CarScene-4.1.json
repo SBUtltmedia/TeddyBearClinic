@@ -1,6 +1,6 @@
 {
-    "roomImage": "Parking_Lot_4_1.svg",
-    "nextRoom": "Parking_Lot_4_2",
+    "roomImage": "CarScene-4.1.svg",
+    "nextRoom": "CarScene-4.2",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
@@ -28,7 +28,7 @@
             "Name": "Beachbear",
             "bannerText": "The booster seat is not secured.",
             "postText": [
-                "Uh oh! Beach Bear tried riding in the front seat, but they are too young.",
+                "Uh oh! Beachbear tried riding in the front seat, but they are too young.",
                 "It is safest for all kids to ride in the backseat at least until they turn 13 years old. Airbags in the front are designed to protect adults and they can be dangerous for kids."
             ],
             "loopAmount": 1,

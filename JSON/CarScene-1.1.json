@@ -1,0 +1,31 @@
+{
+    "roomImage": "CarScene-1.1.svg",
+    "nextRoom": "CarScene-1.2",
+    "completedText": "",
+    "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
+        { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
+    ],
+    "targets": [{
+        "Name": "Chefbear",
+        "bannerText": "Chefbear only has one hand on the steering wheel.",
+        "postText": [
+            "Uh oh! Chefbear is holding their water bottle while driving. </li></ul>",
+            "It is safest for the driver to have both hands on the steering wheel when the car is moving. </li></ul>"
+        ],
+        "loopAmount": 1,
+        "frameRate": 5,
+        "isTrigger": true,
+        "audioFile": "Steer.wav",
+        "thumbScale": "translate(300,275) scale(2.45)"
+    },{
+        "Name": "Headlights",
+        "loopAmount": 1,
+        "frameRate": 5,
+        "isTrigger": false,
+        "audioFile": "Steer.wav",
+        "thumbScale": "translate(300,275) scale(2.45)"
+    }
+
+]
+
+}

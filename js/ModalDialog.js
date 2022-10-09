@@ -71,7 +71,7 @@ class ModalDialog {
         $(".background1").removeClass("background1").addClass(this.background)
 
         $("#bubbleContent").html(this.targetInfo['postText'][this.dialogIndex])
-        let sound = `bubbleSpeech/${this.scene.game.currentRoom}_${this.targetInfo.Name}_${this.dialogIndex}.mp3`
+        let sound = `bubbleSpeech/${this.scene.game.currentRoom}_${this.targetInfo.Name}_${this.dialogIndex}.mp3` //Naming for bubble audio files
         let callback = () => { $('#thoughtBubble').trigger("click") };
         this.scene.Narration = playSound(sound, "bubbleSpeech", callback);
 

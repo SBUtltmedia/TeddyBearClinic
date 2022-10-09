@@ -1,6 +1,6 @@
 {
-    "roomImage": "TBC-Room2.svg",
-    "nextRoom": "TBC-Room3",
+    "roomImage": "BikeScene-2.svg",
+    "nextRoom": "BikeScene-3",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
@@ -15,7 +15,7 @@
             "loopAmount": 1,
             "frameRate": 3,
             "isTrigger": true,
-            "audioFile": "soccer.mp3",
+            "audioFile": "AdjustStrap.mp3",
             "thumbScale": "translate(300,275) scale(2.45)",
             "hint": "I'm soft but shed all over",
             "hintXValue": 15,
@@ -26,14 +26,14 @@
             "Name": "Skaterbear",
             "bannerText": "Safety pads",
             "postText": [
-                "Good find! Skaterbear is wearing safety pads. </li></ul>",
-                "When learning how to ride a bike or skate for the first time, safety pads are a great way to protect yourself in case something goes wrong. </li></ul>"
+                "Good find! Skaterbear is wearing safety pads and he has his helmet on just right.  </li></ul>",
+                "When learning how to ride or doing tricks, safety pads are a great way to protect other parts of your body too. </li></ul>"
             ],
             "loopAmount": 1,
             "frameRate": 6,
             "isGood": true,
             "isTrigger": true,
-            "audioFile": "soccer.mp3",
+            "audioFile": "TapHelmet.mp3",
             "thumbScale": "translate(300,275) scale(2.45)",
             "hint": "I'm soft but shed all over",
             "hintXValue": 15,

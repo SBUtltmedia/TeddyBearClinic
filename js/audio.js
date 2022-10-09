@@ -14,13 +14,8 @@ function playSound(sound, type, callback = () => { }) {
     let source_element = $(`#${type} source`)[0];
 
     if (audio_element.canPlayType) {
-        //for (var i = 0; i < arguments.length; i++) {
         source_element.setAttribute('src', "audio/" + sound)
-        //if (arguments[i].match(/\.(\w+)$/i))
-        //source_element.setAttribute('type', audiotypes[RegExp.$1])
-
-        //}
-        //audio_element.volume = 0.05
+        
         audio_element.addEventListener('ended', (event) => {
             console.log(cb)
             cb()
@@ -41,7 +36,6 @@ function playSound(sound, type, callback = () => { }) {
         audio_element.stopclip = function () {
             cb = () => { };
             console.log("here")
-            //source_element.setAttribute('src', '')
 
 
             audio_element.pause();

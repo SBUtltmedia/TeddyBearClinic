@@ -1,6 +1,6 @@
 {
-    "roomImage": "Parking_Lot_2_2.svg",
-    "nextRoom": "Parking_Lot_3_1",
+    "roomImage": "CarScene-2.2.svg",
+    "nextRoom": "CarScene-3.1",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
@@ -9,7 +9,7 @@
             "Name": "Sunny",
             "bannerText": "The booster seat is not secured.",
             "postText": [
-                "Uh oh! Sunny Bear wanted to wear the seatbelt by itself.  But Sunny Bear  is not tall enough yet.  When we are not tall enough for the seatbelt, the shoulder belt can touch our neck like it is on Sunny Bear.  This is not safe.",
+                "Uh oh! Sunnybear wanted to wear the seatbelt by itself.  But Sunnybear is not tall enough yet.  When we are not tall enough for the seatbelt, the shoulder belt can touch our neck like it is on Sunnybear.  This is not safe.",
                 "Now it's better! We want the shoulder belt to lay across our shoulder and the lap belt to lay low across our hips.  Our shoulders and hips have strong bones that help keep us safe in case there is a car crash. The booster seat helps raise us up to make sure the seatbelts all fit the right way to keep us safe."
             ],
             "loopAmount": 1,
@@ -28,7 +28,7 @@
             "Name": "Wizard",
             "bannerText": "The booster seat is not secured.",
             "postText": [
-                "You found it! Wizard Bear put their shoulder belt behind their back.  This is not a safe way to ride in the car.",
+                "You found it! Wizardbear put their shoulder belt behind their back.  This is not a safe way to ride in the car.",
                 "It is important to always wear our seatbelt the right way. This means wearing the shoulder belt across our shoulder, and the lap belt should sit low on our hips."
             ],
             "loopAmount": 1,

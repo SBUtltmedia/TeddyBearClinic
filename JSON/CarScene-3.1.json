@@ -1,6 +1,6 @@
 {
-    "roomImage": "Parking_Lot_3_1.svg",
-    "nextRoom": "Parking_Lot_3_2",
+    "roomImage": "CarScene-3.1.svg",
+    "nextRoom": "CarScene-3.2",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
@@ -9,8 +9,8 @@
         "Name": "Constructionbear",
         "bannerText": "The booster seat is not secured.",
         "postText": [
-            "Oh no! Construction Bear was not wearing their seatbelt!  That’s not safe!",
-            "Now Construction Bear is buckled up and ready to go! It is important for everyone in the car to wear their seatbelts.  You can help keep other people safe in the car by reminding them to buckle up, even on short car trips."
+            "Oh no! Constructionbear was not wearing their seatbelt!  That’s not safe!",
+            "Now Constructionbear is buckled up and ready to go! It is important for everyone in the car to wear their seatbelts.  You can help keep other people safe in the car by reminding them to buckle up, even on short car trips."
         ],
         "loopAmount": 1,
         "frameRate": 30,

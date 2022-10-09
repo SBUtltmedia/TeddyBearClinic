@@ -1,6 +1,6 @@
 {
-    "roomImage": "Parking_Lot_4_2.svg",
-    "nextRoom": "Certificate",
+    "roomImage": "CarScene-4.2.svg",
+    "nextRoom": "CarToBike",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 30, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
@@ -9,7 +9,7 @@
             "Name": "Karatebear",
             "bannerText": "A passenger is not wearing their seatbelt.",
             "postText": [
-                "Oh no! Karate Bear is not buckled up.",
+                "Oh no! Karatebear is not buckled up.",
                 "Remember to always buckle up before the car starts moving. Everyone in the car should be buckled up, even on short car trips."
             ],
             "loopAmount": 1,

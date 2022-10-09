@@ -6,7 +6,7 @@ class Game {
             this.autoplay = false
         }
 
-        this.currentRoom = "TBC-Room1"
+        this.currentRoom = "CarScene-1.1"
         var checkLocalStorage = localStorage.getItem('currentRoom')
         if (checkLocalStorage) {
             // this.currentRoom = checkLocalStorage
