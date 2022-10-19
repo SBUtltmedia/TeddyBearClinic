@@ -1,5 +1,5 @@
 #bubbleContent,
-#splashBubble {
+#splashBubble, #Heading {
     border-width: .5rem;
     padding: 3.5rem 4rem 4rem 4rem;
     margin-right: 30%;
@@ -11,6 +11,13 @@
     padding: 2rem 4rem 4rem 4rem!important;
     margin-bottom: 5%!important;
     height: 33%!important;
+}
+
+#Heading{
+    font-size: 2rem;
+    top: -2%;
+    left: -2%;
+    width: 60%;
 }
 
 #bubbleContent {

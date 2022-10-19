@@ -27,6 +27,7 @@ class ModalDialog {
 
     }
     closeBubble() {
+        
         $(".target").css({ pointerEvents: "auto" })
         $("#thoughtBubble").remove()
         this.scene.removeTarget()
@@ -41,6 +42,10 @@ class ModalDialog {
                 setTimeout(() => this.scene.game.loadRoom(), 1000)
             }
 
+        }
+        if(this.dialogIndex == 1 && this.targetInfo.autoClickNext){
+            console.log(this.targetInfo);
+            setTimeout(() => {$(`#${this.targetInfo.autoClickNext}`).trigger("click")}, 3000)
         }
     }
 

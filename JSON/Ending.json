@@ -12,6 +12,7 @@
                 "[text]  </li></ul>",
                 "[click to go to certificate] </li></ul>"
             ],
+            "autoClickNext": "Racerbear",
             "loopAmount": 1,
             "frameRate": 3,
             "isTrigger": true,
