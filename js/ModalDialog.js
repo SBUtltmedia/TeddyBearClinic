@@ -45,6 +45,7 @@ class ModalDialog {
         }
         if(this.dialogIndex == 1 && this.targetInfo.autoClickNext){
             console.log(this.targetInfo);
+            $(".target").css({ pointerEvents: "none" })
             setTimeout(() => {$(`#${this.targetInfo.autoClickNext}`).trigger("click")}, 3000)
         }
     }
