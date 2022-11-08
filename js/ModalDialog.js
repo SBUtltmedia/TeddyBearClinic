@@ -36,7 +36,7 @@ class ModalDialog {
             this.scene.game.currentRoom = this.scene.roomInfo.nextRoom;
             this.scene.game.isTutorial = false;
             if (this.scene.game.currentRoom == "Certificate") {
-                window.location.assign("certificate/")
+                window.location.assign("https://apps.tlt.stonybrook.edu/TeddyBearClinic/certificate/")
 
             } else {
                 setTimeout(() => this.scene.game.loadRoom(), 1000)
