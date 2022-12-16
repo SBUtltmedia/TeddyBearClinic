@@ -1,6 +1,6 @@
 {
     "roomImage": "BikeScene-4.svg",
-    "nextRoom": "Certificate",
+    "nextRoom": "Ending",
     "completedText": "",
     "backgroundAnimations": [{ "animationName": "Balloons", "frameRate": 5, "loopAmount": 10000 },
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
