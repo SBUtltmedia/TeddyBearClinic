@@ -10,16 +10,38 @@ class ModalDialog {
         this.makeDOMItems();
 
 
+
     }
 
 
     makeDOMItems() {
+        if(this.targetInfo.intro){
+            // console.log(this.targetInfo.Name);
+            // let img=`#${this.targetInfo.Name}`
+            // $(img).show();
+            // $(img).css({ pointerEvents: "auto" })
+            
+            // let sound = `bubbleSpeech/${this.scene.game.currentRoom}_${img}.mp3` //Naming for bubble audio files
+            // let callback = () => { $(img).trigger("click") };
+            // this.scene.Narration = playSound(sound, "bubbleSpeech", callback);
+            // this.scene.playNarration();
 
+            // $(img).on("click", () => {
+            //     console.log("closing intro");
+            //     $(img).hide();
+            //     this.scene.Narration.stopclip();
+            //     this.targetInfo.hasAnimated = true;
+            //     this.closeBubble()
+            // });
 
-        this.popup = $("<div/>", {
-            id: "thoughtBubble",
-            class: "thoughtPopAnimation"
-        }).load("popup.html", () => this.populateBubble())
+        } else {
+            this.popup = $("<div/>", {
+                id: "thoughtBubble",
+                class: "thoughtPopAnimation"
+            }).load("popup.html", () => this.populateBubble())
+        }
+
+        
 
 
 
@@ -44,9 +66,8 @@ class ModalDialog {
 
         }
         if(this.dialogIndex == 1 && this.targetInfo.autoClickNext){
-            console.log(this.targetInfo);
             $(".target").css({ pointerEvents: "none" })
-            setTimeout(() => {$(`#${this.targetInfo.autoClickNext}`).trigger("click")}, 3000)
+            setTimeout(() => {$(`#${this.targetInfo.autoClickNext}`).trigger("click")}, 1000)
         }
     }
 
@@ -82,7 +103,6 @@ class ModalDialog {
         this.scene.Narration = playSound(sound, "bubbleSpeech", callback);
 
         this.scene.playNarration();
-        console.log($("thoughtBubble"))
 
         $("#thoughtBubble").on("click", () => {
             console.log("Start animation");
@@ -91,10 +111,15 @@ class ModalDialog {
             if (!this.targetInfo.hasAnimated) {
                 console.log("!hasAnimated");
                 playSound(this.targetInfo.audioFile, "soundEffect").playclip();
+
                 var animate = new Animate(this.targetInfo.Name, this.targetInfo.frameRate)
+                if(this.targetInfo.hideLayer) {$(`#${this.targetInfo.hideLayer}`).hide()}
+
                 animate.animate().then(() => {
                     console.log("animate().then");
                     this.targetInfo.hasAnimated = true;
+                    if(this.targetInfo.hideLayer) {$(`#${this.targetInfo.hideLayer}`).show()}
+
                     if (this.targetInfo.postText.length - 1 > this.dialogIndex) {
                         new ModalDialog(this.scene, this.targetInfo, this.dialogIndex + 1)
                     }

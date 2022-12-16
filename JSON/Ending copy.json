@@ -6,6 +6,27 @@
         { "animationName": "Cars", "frameRate": 10, "loopAmount": 10000 }
     ],
     "targets": [{
+            "Name": "Congrats",
+            "bannerText": "No helmet",
+            "postText": [
+                "What’s the first thing we do when we get in the car to stay safe?  </li></ul>",
+                "Buckle Up! </li></ul>"
+            ],
+            "autoClickNext": "Driver",
+            "autoFirst": true,
+            "intro": true,
+            "loopAmount": 1,
+            "frameRate": 3,
+            "isTrigger": true,
+            "audioFile": "soccer.mp3",
+            "thumbScale": "translate(300,275) scale(2.45)",
+            "hint": "I'm soft but shed all over",
+            "hintXValue": 15,
+            "Text": [
+                "<span style=\"font-size:14px\"><strong>FURRY PET (Ex: Dogs, Cats, Hamsters, Guinea Pigs, and Rabbits)</strong></span><span style=\"font-size:14px\"><strong> </strong></span><span style=\"font-size:14px\">are common pet allergens that can trigger asthma symptoms in some people.</span><span style=\"font-size:14px\">Pet hair and dander, especially cat hair, can fly in the air and land on surfaces throughout the house...</span>"
+            ],
+            "otherAnimations": [{"Name": "SpotlightD", "frameRate": 3}]
+        },{
             "Name": "Driver",
             "bannerText": "No helmet",
             "postText": [
@@ -13,7 +34,6 @@
                 "Buckle Up! </li></ul>"
             ],
             "autoClickNext": "Backseat",
-            "autoFirst": true,
             "loopAmount": 1,
             "frameRate": 3,
             "isTrigger": true,

@@ -8,7 +8,6 @@ var audiotypes = {
 
 
 function playSound(sound, type, callback = () => { }) {
-    console.log(sound)
     let cb = callback;
     let audio_element = $(`#${type}`)[0];
     let source_element = $(`#${type} source`)[0];
@@ -17,7 +16,6 @@ function playSound(sound, type, callback = () => { }) {
         source_element.setAttribute('src', "audio/" + sound)
         
         audio_element.addEventListener('ended', (event) => {
-            console.log(cb)
             cb()
         });
 
@@ -35,7 +33,6 @@ function playSound(sound, type, callback = () => { }) {
         }
         audio_element.stopclip = function () {
             cb = () => { };
-            console.log("here")
 
 
             audio_element.pause();
