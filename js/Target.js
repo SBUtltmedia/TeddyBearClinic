@@ -13,8 +13,8 @@ class Target {
         this.targetSelector.on("click", (evt) => {
             this.itemClicked(evt)
         })
-        if (this.targetInfo.autoFirst && this.targetInfo.autoClickNext){
-            setTimeout(() => {this.targetSelector.trigger("click")}, 1000)
+        if (this.targetInfo.autoFirst){
+            setTimeout(() => {$(`#${this.targetInfo.Name}`).trigger("click")}, 1000)
         }
     }
 

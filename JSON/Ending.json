@@ -32,7 +32,7 @@
                 "Where is the safest place in the car for kids to sit?  </li></ul>",
                 "In the back! </li></ul>"
             ],
-            "autoClickNext": "Racerbear",
+            "autoClickNext": "Superbear",
             "hideLayer": "Driver",
             "loopAmount": 1,
             "frameRate": 3,
@@ -47,7 +47,7 @@
             ],
             "otherAnimations": [{"Name": "SpotlightB", "frameRate": 3}]
         },{
-            "Name": "Racerbear",
+            "Name": "Superbear",
             "bannerText": "No helmet",
             "postText": [
                 "What do we wear to protect our brains when we ride our bikes?  </li></ul>",
