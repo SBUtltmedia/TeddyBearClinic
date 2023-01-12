@@ -17,7 +17,7 @@
             "frameRate": 5,
             "isTrigger": true,
             "isGood": true,
-            "audioFile": "soccer.mp3",
+            "audioFile": "Steer.wav",
             "thumbScale": "translate(300,275) scale(2.45)",
             "hint": "I'm soft but shed all over",
             "hintXValue": 15,
