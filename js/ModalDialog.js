@@ -58,7 +58,11 @@ class ModalDialog {
             this.scene.game.currentRoom = this.scene.roomInfo.nextRoom;
             this.scene.game.isTutorial = false;
             if (this.scene.game.currentRoom == "Certificate") {
+                // var c_sound = playSound("Certificate.mp3", "bubbleSpeech");
+                // setTimeout(() => c_sound.playclip(), 1000)
+
                 window.location.assign("https://apps.tlt.stonybrook.edu/TeddyBearClinic/certificate/")
+                
 
             } else {
                 setTimeout(() => this.scene.game.loadRoom(), 1000)

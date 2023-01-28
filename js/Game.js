@@ -36,10 +36,11 @@ class Game {
     }
     loadRoom() {
         $.get(`JSON/${this.currentRoom}.json`, (result) => {
-            this.Scene = new Scene(this, result)
             $('#screen').css({
                 opacity: 0
             });
+            this.Scene = new Scene(this, result)
+            
             $(document).attr("title", `Road Safety Game ${this.currentRoom.replace("%20"," ")}`);
         }).fail(function() {
             window.location = "./#Hallway";

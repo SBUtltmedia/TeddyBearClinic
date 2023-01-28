@@ -19,7 +19,33 @@ class Scene {
             this.currentTargetId = 0;
         }
 
-        this.setupRoom(this.roomInfo)
+        $("#roomSVG").remove()
+
+        if (this.roomName == "Ending"){
+            var img = $("<img/>", {
+                id: "ending_intro",
+                src: "img/Congrats.svg"
+            })
+            img.css({width: "100%", display: "block"})
+            $("#screen").append(img)
+            $("#screen").css({
+                opacity: 1
+            });
+
+            var intro_sound = playSound("bubbleSpeech/Ending_Intro_0.mp3", "bubbleSpeech", () => {$("#ending_intro").trigger("click")});
+            setTimeout(() => intro_sound.playclip(), 1000)
+            
+
+            $("#ending_intro").on("click", () => {
+                console.log('closing ending_intro')
+                intro_sound.stopclip();
+                $("#screen").css({opacity: "0"})
+
+                this.setupRoom(this.roomInfo)
+            });
+        }else{
+            this.setupRoom(this.roomInfo)
+        }
     }
 
     setupRoom() {
