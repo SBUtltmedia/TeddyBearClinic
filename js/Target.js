@@ -19,10 +19,13 @@ class Target {
     }
 
     itemClicked(evt) {
+        var soundclip = "MirrorDing.mp3";
         if (this.targetInfo.isTrigger) {
-            $(".target").css({ pointerEvents: "none" })
+            $(".target").css({ pointerEvents: "none" });
+        }else{ //For non-triggers (aka the Headlights)
+            soundclip = "Honk.wav"
         }
-        playSound("MirrorDing.mp3", "soundEffect").playclip()
+        playSound(soundclip, "soundEffect").playclip()
         setTimeout(() => this.modalAndCubbyShow(evt), 500)
 
     }
