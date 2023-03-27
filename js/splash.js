@@ -12,12 +12,18 @@ $(()=>{
 })
 
 function closeSplash(){
-    console.log("game click");
-    $("#KristiIntro").css({display: "block"});
-
+	
     $("#first_splash").css({display: "none"});
-    sound = playSound("Welcome_Page.mp3", "bubbleSpeech", () => {$("#KristiIntro").trigger("click")});
+     
+$("#KristiIntro").append($('<video/>',{src:"TBC3.mp4", id:"vid", type: 'video/mp4',style:"left:0;top:0;width:100%;position:absolute;"}))
+  
+    $("#KristiIntro").show(1000);
+  $('#vid').trigger('play').on('ended',function(){
+  $('#vid').hide(500);
+	sound = playSound("Welcome_Page.mp3", "bubbleSpeech", () => {$("#KristiIntro").trigger("click")});
     sound.playclip();
+    }); 
+    
 }
 
 function closeIntro(){
