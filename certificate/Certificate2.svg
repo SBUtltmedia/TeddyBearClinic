@@ -676,4 +676,15 @@
 		</g>
 	</g>
 </g>
+	<foreignObject x="63" y="200" width="800" height="48">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<input size="30" id="line1Input" value=""></input>
+		</div>
+	</foreignObject>
+
+	<foreignObject x="177" y="301" width="600" height="48">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<input  size="20" id="line2Input" value=""></input>
+		</div>
+	</foreignObject>
 </svg>
